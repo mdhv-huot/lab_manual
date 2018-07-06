@@ -9,6 +9,10 @@ font-style : normal;
              url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
              url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
 }
+@font-face {
+    font-family: "Goudy Initialen";
+    src: url("../fonts/GoudyInitialen.ttf");
+}
 html {
     background: rgb(200, 200, 200);
 
@@ -17,7 +21,7 @@ html {
 body {
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #404040;
+    color: #1e1e1e;
     font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -55,8 +59,11 @@ body {
     img {
     page-break-inside:avoid;
     page-break-after:avoid;
+        max-width: 100% !important;
     }
- 
+    figure {
+        page-break-inside: avoid;
+    }
     blockquote, table, pre {
     page-break-inside:avoid
     } 
@@ -88,6 +95,12 @@ body {
     }
 
   }
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+
+    }
+}
 /* end printing*/
 
 /* For tables */
@@ -96,6 +109,7 @@ table.datasheet {
     border: 1px solid black;
     margin:auto;
     margin-top: 20px;
+    text-align:center;
 }
 
 table.datasheet tr:nth-child(odd) {
@@ -116,9 +130,26 @@ table.datasheet th {
      border-collapse: collapse;
      
  }
+.scroll {
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.datainfo {
+    border-bottom: 1pt solid black;
+    min-width: 300px;
+}
+
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.blackedout {
+    background-color: rgb(20, 20, 20);
+}
+.fixedheight {
+    height:22px;
 }
 /* End for tables */
 
@@ -150,7 +181,7 @@ a {
 
 b,
 strong {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 em {
@@ -245,10 +276,14 @@ ul.safety {
  }
  
 .check:before {
-     content: "\f12a";
+     content: "\f00c";
      background-color: #03a9f4;
  }
- 
+
+.check ul li {
+    list-style-type: circle;
+}
+
 .warning {
      border-color: #FFa500;
  }
@@ -363,3 +398,98 @@ ol.sublist {
 }
 
 
+/* Specific for titration lab*/
+
+.acid {
+    margin: auto;
+}
+
+.acid th {
+    text-align: left;
+}
+
+.acid td {
+    padding-right: 2em;
+}
+
+.titration {
+    min-width: 85px;
+}
+
+@media screen and (max-width: 650px) {
+    .titration {
+        min-width: 10px;
+    }
+    .datainfo {
+        min-width: 200px;
+    }
+}
+
+.safety_title {
+    font-weight: bold;
+}
+/* Graphs */
+
+.canvasContainer {
+    float: left;
+    position: relative;
+
+}
+
+.canvasquestion {
+    height: 200px;
+    width: 200px;
+}
+
+.drop {
+    float: left;
+    width: 0.85em;
+    font-size: 800%;
+    font-family: "Goudy Initialen", "Goudy Old Style", Serif;
+    line-height: 80%;
+}
+
+.sherlock {
+    font-family: "Goudy Old Style", Serif;
+}
+.sherlock h1 {
+    border-bottom: 0px;
+    border-top: 0px;
+    padding-bottom: 3px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.sherlock h2 {
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: large;
+}
+
+.zinc {
+    color: rgb(85, 192, 95);
+}
+.lithium {
+    color: rgb(233, 1, 44)
+}
+.strontium {
+    color: rgb(242, 85, 36)
+}
+.sodium {
+    color: rgb(216, 185, 72)
+}
+.copper {
+    color: rgb(73, 185, 131)
+}
+.potassium {
+    color: rgb(168, 141, 192)
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+.blue {
+    color:rgb(0, 0, 255);
+}

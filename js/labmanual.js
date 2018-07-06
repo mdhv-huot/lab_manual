@@ -9,7 +9,7 @@ function printDiv(printableArea) {
     window.print();
 
     document.body.innerHTML = originalContents;
-};
+}
 
 
 
@@ -295,7 +295,12 @@ function safety(chemicals) {
             , 'aka': 'Bromoacetophenone'
             , 'hazard': 'toxic if swallowed or inhaled; causes severe skin burns and eye damage'
         },
-
+        'phenolphthalein': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926477'
+            , 'name': 'Phenolphthalein'
+            , 'aka': ''
+            , 'hazard': ' solution is hazardous in   case of skin contact(irritant), of eye contact(irritant) and of ingestion. It is slightly hazardous in case of skin contact(permeator).'
+        },
         'phenylacetylene': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC152465000&productDescription=phenylacetylene--pure-acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
             , 'name': 'Phenylacetylene'
@@ -427,19 +432,49 @@ function safety(chemicals) {
             , 'name': 'Triphenylphosphine'
             , 'aka': ''
             , 'hazard': 'harmful if swallowed; may cause an allergic skin reaction; may damage the CNS through prolonged exposure'
+        }, 'unknown': {
+            'link': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            , 'name': 'Unknown'
+            , 'aka': ''
+            , 'hazard': ' is  slightly  hazardous  in  case  of  skin  contact(irritant), eye contact (irritant) and inhalation or ingestion.'
+        }, 'kbiph': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926672'
+            , 'name': 'Potassium biphthalate'
+            , 'aka': ''
+            , 'hazard': ' is slightly hazardous  in case of skin contact(irritant),eye contact (irritant), ingestion and inhalation.'
+        }, 'KSCN': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927574'
+            , 'name': 'Potassium thiocyanate'
+            , 'aka': ''
+            , 'hazard': ' is hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
+        }, 'ironnitrate': {
+            'link': 'http://www.ch.ntu.edu.tw/~genchem99/msds/exp9/Fe(NO3)3.pdf'
+            , 'name': 'Iron(III) nitrate'
+            , 'aka': ''
+            , 'hazard': ' causes eye, skin irritation and irritation in case of inhalation or ingestion. It may cause CNS depression, kidney damage, kidney damage and cardiac disturbances if ingested.'
+        }, 'nitricacid': {
+            'link': ' http://www.sciencelab.com/msds.php?msdsId=9926241'
+            , 'name': 'Nitric acid'
+            , 'aka': ''
+            , 'hazard': ' is corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
         }
-
+        , 'crystal violet': {
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=23270180&productDescription=GRAM+STAIN+CRYSTL+VIOLET+GAL&catNo=23-270-180&vendorId=VN00008297&storeId=10652'
+            , 'name': 'Crystal Violet'
+            , 'aka': ''
+            , 'hazard': 'is flammable and hazardous in case of ingestion or inhalation. It will also dye your hand purple for a couple of days, so you may want to wear gloves.'
+        }
     };
     safety = document.getElementById("safety");
     document.getElementById("safety").style.listStyle = "inside";
     safety.classList.add('notice');
     safety.classList.add('critical');
     title = document.createElement('div');
-    title.classList.add('safety_title')
+    title.classList.add('safety_title');
     title.appendChild(document.createTextNode('Chemical Safety'));
     safety.appendChild(title);
     for (i = 0; i < chemicals.length; i++) {
-        console.log(chemicals[i])
+        console.log(chemicals[i]);
         chemical = document.createElement('li');
 
         link = document.createElement('a');
@@ -456,7 +491,7 @@ function safety(chemicals) {
 
         chemical.appendChild(document.createTextNode(': '));
 
-        chemical.appendChild(document.createTextNode(safety_statements[chemicals[i]]['hazard']))
+        chemical.appendChild(document.createTextNode(safety_statements[chemicals[i]]['hazard']));
 
         safety.appendChild(chemical);
     }
@@ -1475,7 +1510,7 @@ function bibentry(entry){
                     "ID": ""
                 }
 
-        }
+        };
 
     if (result[entry]['ENTRYTYPE'] == 'article')
     {
@@ -1507,12 +1542,12 @@ function bibentry(entry){
         var pages = document.createElement('span');
         pages.appendChild(document.createTextNode(page +'.'));
 
-        item.appendChild(authors)
-        item.appendChild(titles)
-        item.appendChild(journals)
-        item.appendChild(years)
-        item.appendChild(volumes)
-        item.appendChild(pages)
+        item.appendChild(authors);
+        item.appendChild(titles);
+        item.appendChild(journals);
+        item.appendChild(years);
+        item.appendChild(volumes);
+        item.appendChild(pages);
 
         document.getElementById("reference").appendChild(item);
     }
@@ -1543,11 +1578,11 @@ function bibentry(entry){
         var years = document.createElement('span');
         years.appendChild(document.createTextNode(year + '. '));
 
-        item.appendChild(authors)
-        item.appendChild(titles)
-        item.appendChild(publishers)
-        item.appendChild(cities)
-        item.appendChild(years)
+        item.appendChild(authors);
+        item.appendChild(titles);
+        item.appendChild(publishers);
+        item.appendChild(cities);
+        item.appendChild(years);
 
         document.getElementById("reference").appendChild(item);
     }
@@ -1588,17 +1623,17 @@ function bibentry(entry){
         years.appendChild(document.createTextNode(year + '. '));
 
         var pages = document.createElement('span');
-        pages.appendChild(document.createTextNode('pp ' + page + '.'))
+        pages.appendChild(document.createTextNode('pp ' + page + '.'));
 
 
-        item.appendChild(authors)
-        item.appendChild(chaptertitles)
-        item.appendChild(titles)
-        item.appendChild(editors)
-        item.appendChild(publishers)
-        item.appendChild(cities)
-        item.appendChild(years)
-        item.appendChild(pages)
+        item.appendChild(authors);
+        item.appendChild(chaptertitles);
+        item.appendChild(titles);
+        item.appendChild(editors);
+        item.appendChild(publishers);
+        item.appendChild(cities);
+        item.appendChild(years);
+        item.appendChild(pages);
 
         document.getElementById("reference").appendChild(item);
     }
@@ -1624,10 +1659,10 @@ function bibentry(entry){
         var access_dates = document.createElement('span');
         access_dates.appendChild(document.createTextNode('(' + access_date + ').'));
 
-        item.appendChild(sources)
-        item.appendChild(titles)
-        item.appendChild(urls)
-        item.appendChild(access_dates)
+        item.appendChild(sources);
+        item.appendChild(titles);
+        item.appendChild(urls);
+        item.appendChild(access_dates);
 
         document.getElementById("reference").appendChild(item);
     }
@@ -1636,17 +1671,17 @@ function bibentry(entry){
     {
         var comment = results[entry]['comment'];
 
-        var item = document.createElement('li')
+        var item = document.createElement('li');
 
         var comments = document.createElement('span');
         comments.appendChild(document.createTextNode(comment));
 
-        item.appendChild(comments)
+        item.appendChild(comments);
 
         document.getElementById("reference").appendChild(item);
     }
 
-};
+}
 
 /*
 <div id="references"><h2>References</h2>
