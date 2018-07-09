@@ -454,6 +454,13 @@ function safety(chemicals) {
             , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation; corrosive'
         },
 
+        'stilbene': {
+            'link': 'https://www.fishersci.com/store/msds?partNumber=AC161041000&productDescription=TRANS-STILBENE%2C+96%25+100GR&vendorId=VN00032119&countryCode=US&language=en'
+            , 'name': 'Stilbene'
+            , 'aka': ''
+            , 'hazard': 'causes eye irritation; harmful if swallowed'
+        },
+
         'sulfuric acid': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=A298212&productDescription=sulfuric-acid-technical-fisher-chemical&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Sulfuric acid'
