@@ -18,6 +18,20 @@ function printDiv(printableArea) {
 function safety(chemicals) {
     var safety_statements = {
 
+        '1-Methylimidazole': {
+            'link': 'https://fscimage.fishersci.com/msds/86343.htm'
+            , 'name': '1-Methylimidazole'
+            , 'aka': 'N-methylimidazole'
+            , 'hazard': 'very harmful in contact with eyes/skin or if swallowed or inhaled (wear gloves); combustible'
+        },
+
+        '2,5-dimethyl-2,5-hexanediol': {
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=AC162500050&productDescription=2%2C5-DIMETHYL-2%2C5-HEXANEDI+5GR&catNo=AC162500050&vendorId=VN00032119&storeId=10652'
+            , 'name': '2,5-dimethyl-2,5-hexanediol'
+            , 'aka': ''
+            , 'hazard': 'corrosive (wear gloves); may cause eye damage'
+        },
+
         '40TCPP': {
             'link': 'https://www.chemblink.com/MSDS/MSDSFiles/14609-54-2_Strem.pdf'
             , 'name': '40TCPP'
@@ -29,6 +43,12 @@ function safety(chemicals) {
             'link': 'https://www.fishersci.com/msdsproxy%3FproductName%3DAC423220025%26productDescription%3DACETIC%2BACID%252C%2BGLACIA%2B2.5L%26catNo%3DAC42322-0025%2B%26vendorId%3DVN00033901%26storeId%3D10652'
             , 'name': 'Acetic acid'
             , 'hazard': 'flammable; causes severe skin burns and eye damage'
+        },
+
+        'acetic anhydride': {
+            'link': 'https://www.fishersci.com/store/msds?partNumber=S25119A&productDescription=ACETIC+ANHYDRIDE+500ML&vendorId=VN00115888&countryCode=US&language=en'
+            , 'name': 'Acetic anhydride'
+            , 'hazard': 'flammable; toxic; harmful if swallowed or inhaled; causes severe skin burns and eye damage; do not handle outside of fumehood'
         },
 
         'acetone': {
@@ -86,6 +106,13 @@ function safety(chemicals) {
             , 'hazard': 'causes skin, eye, and respiratory irritation; may form combustible dust concentrations in air'
         },
 
+        'bromobutane': {
+            'link': 'http://dept.harpercollege.edu/chemistry/sds/1-bromobutane.pdf'
+            , 'name': 'Bromobutane'
+            , 'aka': ''
+            , 'hazard': 'Flammable; hazardous in case of skin/eye contact and ingestion or inhalation'
+        },
+
         'bromophenacyl bromide': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC112682500&productDescription=dibromoacetophenone--acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
             , 'name': '4-Bromophenacyl bromide'
@@ -139,7 +166,7 @@ function safety(chemicals) {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC406920010&productDescription=dichloromethane--acs-reagent-stabilized-with-amylene-acros-organicstrade&vendorId=VN00033901&keyword=true&countryCode=US&language=en'
             , 'name': 'Dichloromethane'
             , 'aka': 'Methylene chloride'
-            , 'hazard': 'causes skin and eye irritation; suspected carcinogen'
+            , 'hazard': 'causes skin and eye irritation; toxic; permeates latex and nitrile gloves; do not use outside fumehood'
         },
 
         'diethyl ether': {
@@ -160,14 +187,14 @@ function safety(chemicals) {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC615110040&productDescription=ethanol--proof--reagent-acs-spectrophotometric-grade-acros-organicstrade&vendorId=VN00033901&keyword=true&countryCode=US&language=en'
             , 'name': 'Ethanol'
             , 'aka': 'Ethyl alcohol'
-            , 'hazard': 'highly flammable; causes serious eye irritation'
+            , 'hazard': 'highly flammable; hazardous in case of skin/eye contact and inhalation or ingestion'
         },
 
         'ethyl acetate': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC149470025&productDescription=ethyl-acetate-plus-acros-organicstrade&vendorId=VN00033901&keyword=true&countryCode=US&language=en'
             , 'name': 'Ethyl acetate'
             , 'aka': ''
-            , 'hazard': 'highly flammable; causes serious eye irritation'
+            , 'hazard': 'highly flammable; hazardous in case of skin/eye contact and inhalation or ingestion'
         },
 
         'ethylene glycol': {
@@ -184,11 +211,18 @@ function safety(chemicals) {
             , 'hazard': 'causes skin, eye, and respiratory irritation '
         },
 
+        'hexanes': {
+            'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-h/S25352A.pdf'
+            , 'name': 'Hexanes'
+            , 'aka': ''
+            , 'hazard': 'flammable; volatile; neurotoxic; hazardous in case of skin/eye contact and inhalation or ingestion; do not use outside of fumehood'
+        },
+
         'hydrochloric acid': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC450550025&productDescription=hydrochloric-acid--acros-organics&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
             , 'name': 'Hydrochloric acid'
             , 'aka': ''
-            , 'hazard': 'may be corrosive to metals; causes severe skin burns, eye damage, and respiratory irritation'
+            , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation (wear gloves); corrosive; do not handle outside of fumehood'
         },
 
         'imidazole': {
@@ -275,6 +309,13 @@ function safety(chemicals) {
             , 'hazard': 'combustible; causes skin, eye, and respiratory irritation'
         },
 
+        'p-aminophenol': {
+            'link': 'https://www.fishersci.com/shop/msdsproxy?storeId=10652&productName=AC400950050&productDescript'
+            , 'name': 'p-Aminophenol'
+            , 'aka': '4-Aminophenol'
+            , 'hazard': 'harmful if swallowed or inhaled; may cause an allergic skin reaction'
+        },
+
         'pd/c': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AAA1201209&productDescription=palladium--on-carbon-type--dry&vendorId=VN00024248&keyword=true&countryCode=US&language=en'
             , 'name': '10% Palladium on carbon'
@@ -315,11 +356,25 @@ function safety(chemicals) {
             , 'hazard': 'harmful if swallowed'
         },
 
+        'phosphomolybdic acid': {
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=AC317100500&productDescription=PHOSPHOMOLYBDIC+ACID+AMMO+50G&catNo=AC317100500&vendorId=VN00032119&storeId=10652'
+            , 'name': 'Phosphomolybdic acid'
+            , 'aka': ''
+            , 'hazard': 'causes skin, eye, and respiratory irritation; toxic and corrosive; will stain skin (wear gloves); do not use outside of fumehood'
+        },
+
         'potassium carbonate': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=BP365500&productDescription=potassium-carbonate-anhydrous-white-granular-powder-fisher-bioreagents&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Potassium carbonate'
             , 'aka': ''
             , 'hazard': 'causes skin, eye, and respiratory irritation '
+        },
+
+        'potassium hexafluorophosphate': {
+            'link': 'https://fscimage.fishersci.com/msds/56817.htm'
+            , 'name': 'KPF6'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin/eye contact and inhalation or ingestion; avoid exposure to fine particles'
         },
 
         'potassium hydroxide': {
@@ -396,7 +451,7 @@ function safety(chemicals) {
             'link': 'https://www.fishersci.com/store/msds?partNumber=S39250&productDescription=sodium-hydroxide-granularnffccepbpjp-fisher-chemical&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Sodium hydroxide'
             , 'aka': ''
-            , 'hazard': 'may be corrosive to metals; causes severe skin burns, eye damage, and respiratory irritation'
+            , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation; corrosive'
         },
 
         'sulfuric acid': {
