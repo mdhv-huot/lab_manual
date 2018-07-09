@@ -432,27 +432,37 @@ function safety(chemicals) {
             , 'name': 'Triphenylphosphine'
             , 'aka': ''
             , 'hazard': 'harmful if swallowed; may cause an allergic skin reaction; may damage the CNS through prolonged exposure'
-        }, 'unknown': {
+        },
+
+        'unknown': {
             'link': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
             , 'name': 'Unknown'
             , 'aka': ''
             , 'hazard': ' is  slightly  hazardous  in  case  of  skin  contact(irritant), eye contact (irritant) and inhalation or ingestion.'
-        }, 'kbiph': {
+        },
+
+        'kbiph': {
             'link': 'http://www.sciencelab.com/msds.php?msdsId=9926672'
             , 'name': 'Potassium biphthalate'
             , 'aka': ''
             , 'hazard': ' is slightly hazardous  in case of skin contact(irritant),eye contact (irritant), ingestion and inhalation.'
-        }, 'KSCN': {
+        },
+
+        'KSCN': {
             'link': 'http://www.sciencelab.com/msds.php?msdsId=9927574'
             , 'name': 'Potassium thiocyanate'
             , 'aka': ''
             , 'hazard': ' is hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
-        }, 'ironnitrate': {
+        },
+
+        'ironnitrate': {
             'link': 'http://www.ch.ntu.edu.tw/~genchem99/msds/exp9/Fe(NO3)3.pdf'
             , 'name': 'Iron(III) nitrate'
             , 'aka': ''
             , 'hazard': ' causes eye, skin irritation and irritation in case of inhalation or ingestion. It may cause CNS depression, kidney damage, kidney damage and cardiac disturbances if ingested.'
-        }, 'nitricacid': {
+        },
+
+        'nitricacid': {
             'link': ' http://www.sciencelab.com/msds.php?msdsId=9926241'
             , 'name': 'Nitric acid'
             , 'aka': ''
@@ -464,20 +474,90 @@ function safety(chemicals) {
             , 'aka': ''
             , 'hazard': 'is flammable and hazardous in case of ingestion or inhalation. It will also dye your hand purple for a couple of days, so you may want to wear gloves.'
         }
+        , 'calcium chloride': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251',
+            'name': 'Calcium chloride',
+            'aka': '',
+            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
+            'skin contact (permeator).'
+        }
+        , 'Benedict': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9925648',
+            'name': "Benedict's Reagent",
+            'aka': '',
+            'hazard': 'Hazardous in case of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of skin contact (irritant).\n' +
+            'Liquid or spray mist may produce tissue damage particularly on mucous\n' +
+            'membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce\n' +
+            'severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.'
+        }
+        , 'sucrose': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927285',
+            'name': 'Sucrose',
+            'aka': 'table sugar',
+            'hazard': 'Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'inhalation.\n'
+        }
+        , 'sodium chloride': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927593',
+            'name': 'Sodium chloride',
+            'aka': 'table salt',
+            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'inhalation.'
+        }
+        , 'potassium chloride': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927402',
+            'name': 'Potassium chloride',
+            'aka': '',
+            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'inhalation.'
+        }
+        , 'magnesium sulfate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927218',
+            'name': 'Magnesium sulfate',
+            'aka': 'epsom salt',
+            'hazard': 'Hazardous in case of ingestion. Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of inhalation.'
+        }
+        , 'potassium sulfate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927236',
+            'name': 'Potassium sulfate',
+            'aka': '',
+            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
+            'skin contact (permeator).'
+        }
+        , 'sodium sulfate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927278',
+            'name': 'Sodium sulfate',
+            'aka': '',
+            'hazard': 'Hazardous in case of eye contact (irritant). Slightly hazardous in case of skin contact (irritant), of ingestion, of inhalation.'
+        }
+        , 'potassium carbonate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926681',
+            'name': 'Potassium carbonate',
+            'aka': '',
+            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of eye\n' +
+            'contact (corrosive).\n'
+        }
+        , 'sodium carbonate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927263',
+            'name': 'Sodium carbonate',
+            'aka': '',
+            'hazard': ': Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation\n' +
+            '(lung irritant).\n'
+        }
+
     };
     safety = document.getElementById("safety");
     document.getElementById("safety").style.listStyle = "inside";
     safety.classList.add('notice');
     safety.classList.add('critical');
-    title = document.createElement('div');
-    title.classList.add('safety_title');
+    var title = document.createElement('strong');
     title.appendChild(document.createTextNode('Chemical Safety'));
-    safety.appendChild(title);
+    var title_strong = document.createElement('p').appendChild(title);
+    safety.appendChild(title_strong);
     for (i = 0; i < chemicals.length; i++) {
-        console.log(chemicals[i]);
-        chemical = document.createElement('li');
+        var chemical = document.createElement('li');
 
-        link = document.createElement('a');
+        var link = document.createElement('a');
         link.setAttribute('href', safety_statements[chemicals[i]]['link']);
         link.appendChild(document.createTextNode(safety_statements[chemicals[i]]['name']));
 
@@ -1512,176 +1592,120 @@ function bibentry(entry){
 
         };
 
-    if (result[entry]['ENTRYTYPE'] == 'article')
-    {
-        var journal =  result[entry]['journaltitle'];
-        var title =  result[entry]['title'];
-        var author = result[entry]['author'];
-        var year = result[entry]['date'];
-        year = year.substring(0, 4);
-        var volume = result[entry]['volume'];
-        var page = result[entry]['pages'];
-
-        var item = document.createElement('li');
-
-        var authors = document.createElement('span');
-        authors.appendChild(document.createTextNode(author + ' '));
-
-        var titles = document.createElement('span');
-        titles.appendChild(document.createTextNode(title + '. '));
-
-        var journals = document.createElement('i');
-        journals.appendChild(document.createTextNode(journal + ', '));
-
-        var years = document.createElement('b');
-        years.appendChild(document.createTextNode(year + ', '));
-
-        var volumes = document.createElement('i');
-        volumes.appendChild(document.createTextNode(volume + ', '));
-
-        var pages = document.createElement('span');
-        pages.appendChild(document.createTextNode(page +'.'));
-
-        item.appendChild(authors);
-        item.appendChild(titles);
-        item.appendChild(journals);
-        item.appendChild(years);
-        item.appendChild(volumes);
-        item.appendChild(pages);
-
-        document.getElementById("reference").appendChild(item);
-    }
-
-    else if (result[entry]['ENTRYTYPE'] == 'book')
-    {
-        var title =  result[entry]['title'];
-        var author = result[entry]['author'];
-        var publisher = result[entry]['publisher'];
-        var city = result[entry]['city'];
-        var year = result[entry]['date'];
-        year = year.substring(0, 4);
-
-        var item = document.createElement('li');
-
-        var authors = document.createElement('span');
-        authors.appendChild(document.createTextNode(author + ' '));
-
-        var titles = document.createElement('i');
-        titles.appendChild(document.createTextNode(title + '. '));
-
-        var publishers = document.createElement('span');
-        publishers.appendChild(document.createTextNode(publisher + ': '));
-
-        var cities = document.createElement('span');
-        cities.appendChild(document.createTextNode(city + ', '));
-
-        var years = document.createElement('span');
-        years.appendChild(document.createTextNode(year + '. '));
-
-        item.appendChild(authors);
-        item.appendChild(titles);
-        item.appendChild(publishers);
-        item.appendChild(cities);
-        item.appendChild(years);
-
-        document.getElementById("reference").appendChild(item);
-    }
-
-    else if (result[entry]['ENTRYTYPE'] == 'chapter')
-    {
-        var title =  result[entry]['title'];
-        var chaptertitle = result[entry]['chaptertitle'];
-        var author = result[entry]['author'];
-        var editor = result[entry]['editor'];
-        var publisher = result[entry]['publisher'];
-        var city = result[entry]['city'];
-        var year = result[entry]['date'];
-        var page = result[entry]['page'];
-        year = year.substring(0, 4);
-
-        var item = document.createElement('li');
-
-        var authors = document.createElement('span');
-        authors.appendChild(document.createTextNode(author + ' '));
-
-        var chaptertitles = document.createElement('span');
-        chaptertitles.appendChild(document.createTextNode(chaptertitle + '. In '));
-
-        var titles = document.createElement('i');
-        titles.appendChild(document.createTextNode(title + '; '));
-
-        var editors = document.createElement('span');
-        editors.appendChild(document.createTextNode(editor + ', Ed. '));
-
-        var publishers = document.createElement('span');
-        publishers.appendChild(document.createTextNode(publisher + ': '));
-
-        var cities = document.createElement('span');
-        cities.appendChild(document.createTextNode(city + ', '));
-
-        var years = document.createElement('span');
-        years.appendChild(document.createTextNode(year + '. '));
-
-        var pages = document.createElement('span');
-        pages.appendChild(document.createTextNode('pp ' + page + '.'));
-
-
-        item.appendChild(authors);
-        item.appendChild(chaptertitles);
-        item.appendChild(titles);
-        item.appendChild(editors);
-        item.appendChild(publishers);
-        item.appendChild(cities);
-        item.appendChild(years);
-        item.appendChild(pages);
-
-        document.getElementById("reference").appendChild(item);
-    }
-
-    else if (result[entry]['ENTRYTYPE'] == 'website')
-    {
-        var source = result[entry]['source'];
-        var title = result[entry]['title'];
-        var url = result[entry]['url'];
-        var access_date = result[entry]['access_date'];
-
-        var item = document.createElement('li');
-
-        var sources = document.createElement('span');
-        sources.appendChild(document.createTextNode(source + '. '));
-
-        var titles = document.createElement('span');
-        titles.appendChild(document.createTextNode(title + '. '));
-
-        var urls = document.createElement('span');
-        urls.appendChild(document.createTextNode(url + ' '));
-
-        var access_dates = document.createElement('span');
-        access_dates.appendChild(document.createTextNode('(' + access_date + ').'));
-
-        item.appendChild(sources);
-        item.appendChild(titles);
-        item.appendChild(urls);
-        item.appendChild(access_dates);
-
-        document.getElementById("reference").appendChild(item);
-    }
-
-    else if (result[entry]['ENTRYTYPE'] == 'comment')
+    var item = document.createElement('li');
+    var authors = document.createElement('span');
+    if (result[entry]['ENTRYTYPE'] == 'comment')
     {
         var comment = results[entry]['comment'];
-
-        var item = document.createElement('li');
-
         var comments = document.createElement('span');
         comments.appendChild(document.createTextNode(comment));
-
         item.appendChild(comments);
+    }
+    else {
+        var title = result[entry]['title'];
+        var titles = document.createElement('span');
+        titles.appendChild(document.createTextNode(title + '. '));
 
+        if (result[entry]['ENTRYTYPE'] == 'website') {
+            var source = result[entry]['source'];
+            var url = result[entry]['url'];
+            var access_date = result[entry]['access_date'];
+            var sources = document.createElement('span');
+            sources.appendChild(document.createTextNode(source + '. '));
+            var urls = document.createElement('span');
+            urls.appendChild(document.createTextNode(url + ' '));
+            var access_dates = document.createElement('span');
+            access_dates.appendChild(document.createTextNode('(' + access_date + ').'));
+
+            item.appendChild(sources);
+            item.appendChild(titles);
+            item.appendChild(urls);
+            item.appendChild(access_dates);
+
+        }
+        else if (result[entry]['ENTRYTYPE'] == 'article') {
+            var journal = result[entry]['journaltitle'];
+            var author = result[entry]['author'];
+            var year = result[entry]['date'];
+            year = year.substring(0, 4);
+            var volume = result[entry]['volume'];
+            var page = result[entry]['pages'];
+            authors.appendChild(document.createTextNode(author + ' '));
+            var journals = document.createElement('i');
+            journals.appendChild(document.createTextNode(journal + ', '));
+            var years = document.createElement('b');
+            years.appendChild(document.createTextNode(year + ', '));
+            var volumes = document.createElement('i');
+            volumes.appendChild(document.createTextNode(volume + ', '));
+            var pages = document.createElement('span');
+            pages.appendChild(document.createTextNode(page + '.'));
+            item.appendChild(authors);
+            item.appendChild(titles);
+            item.appendChild(journals);
+            item.appendChild(years);
+            item.appendChild(volumes);
+            item.appendChild(pages);
+        }
+        else if (result[entry]['ENTRYTYPE'] == 'book') {
+            var author = result[entry]['author'];
+            var publisher = result[entry]['publisher'];
+            var city = result[entry]['city'];
+            var year = result[entry]['date'];
+            year = year.substring(0, 4);
+            authors.appendChild(document.createTextNode(author + ' '));
+            var titles = document.createElement('i');
+            titles.appendChild(document.createTextNode(title + '. '));
+            var publishers = document.createElement('span');
+            publishers.appendChild(document.createTextNode(publisher + ': '));
+            var cities = document.createElement('span');
+            cities.appendChild(document.createTextNode(city + ', '));
+            var years = document.createElement('span');
+            years.appendChild(document.createTextNode(year + '. '));
+
+            item.appendChild(authors);
+            item.appendChild(titles);
+            item.appendChild(publishers);
+            item.appendChild(cities);
+            item.appendChild(years);
+        }
+        else if (result[entry]['ENTRYTYPE'] == 'chapter') {
+
+            var chaptertitle = result[entry]['chaptertitle'];
+            var author = result[entry]['author'];
+            var editor = result[entry]['editor'];
+            var publisher = result[entry]['publisher'];
+            var city = result[entry]['city'];
+            var year = result[entry]['date'];
+            var page = result[entry]['page'];
+            year = year.substring(0, 4);
+            authors.appendChild(document.createTextNode(author + ' '));
+            var chaptertitles = document.createElement('span');
+            chaptertitles.appendChild(document.createTextNode(chaptertitle + '. In '));
+            var titles = document.createElement('i');
+            titles.appendChild(document.createTextNode(title + '; '));
+            var editors = document.createElement('span');
+            editors.appendChild(document.createTextNode(editor + ', Ed. '));
+            var publishers = document.createElement('span');
+            publishers.appendChild(document.createTextNode(publisher + ': '));
+            var cities = document.createElement('span');
+            cities.appendChild(document.createTextNode(city + ', '));
+            var years = document.createElement('span');
+            years.appendChild(document.createTextNode(year + '. '));
+            var pages = document.createElement('span');
+            pages.appendChild(document.createTextNode('pp ' + page + '.'));
+
+            item.appendChild(authors);
+            item.appendChild(chaptertitles);
+            item.appendChild(titles);
+            item.appendChild(editors);
+            item.appendChild(publishers);
+            item.appendChild(cities);
+            item.appendChild(years);
+            item.appendChild(pages);
+        }
+    }
         document.getElementById("reference").appendChild(item);
     }
-
-}
 
 /*
 <div id="references"><h2>References</h2>
@@ -1689,3 +1713,32 @@ function bibentry(entry){
                <script>bibentry('aktoudianakis_2008')</script>
     </ol>
 */
+
+function makeprelab(ids) {
+    var header = document.createElement('h4');
+    header.appendChild(document.createTextNode('Pre-Lab Questions (Compiled from the Lab Manual)'));
+    var description = document.createElement('p');
+    description.appendChild(document.createTextNode('Answer these questions on the back of the data sheet that you will han into your TA.'));
+    var prelab_list = document.createElement('ol');
+    for (i = 0; i < ids.length; i++) {
+        var text = document.getElementById(ids[i]).textContent;
+
+        var item = document.createElement('li');
+        item.appendChild(document.createTextNode(text));
+        prelab_list.appendChild(item);
+    }
+    document.getElementById('prelab').appendChild(header);
+    document.getElementById('prelab').appendChild(description).appendChild(prelab_list);
+
+}
+
+function copyright() {
+    var copy = document.getElementById('copyright');
+    var copy_message = document.createElement('p');
+    var year =(new Date()).getFullYear().toString();
+    var message = 'Copyright McGill University' + ' ' + year;
+    copy_message.appendChild(document.createTextNode(message));
+    copy.appendChild(copy_message);
+
+    document.getElementById('copyright').appendChild(copy);
+}

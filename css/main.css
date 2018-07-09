@@ -21,8 +21,8 @@ html {
 body {
     background: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #1e1e1e;
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    color: #3c3c3c;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
@@ -104,21 +104,23 @@ body {
 /* end printing*/
 
 /* For tables */
+table {
+    border-collapse: collapse;
+}
 table.datasheet {
     border-collapse: collapse;
     border: 1px solid black;
-    margin:auto;
-    margin-top: 20px;
+    margin: 20px auto auto;
     text-align:center;
 }
 
 table.datasheet tr:nth-child(odd) {
-    background-color: #dddddd;
+    background-color: #cccccc;
 }
 
 table.datasheet th {
     
-    background-color:grey;
+    background-color:#cccccc;
     color:black;
     padding-right: 10px;
     padding-left: 10px;
@@ -127,9 +129,24 @@ table.datasheet th {
  table.datasheet  td {
      padding: 6px;
      border: 1px solid rgb(60, 60, 60);
-     border-collapse: collapse;
      
  }
+
+ .labtable {
+     border-bottom: 1px solid black;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: left;
+ }
+
+ .labtable th {
+     background-color: #cccccc;
+ }
+
+ .labtable th, td {
+     padding-right: 15px;
+ }
+
 .scroll {
     overflow: auto;
     overflow-y: hidden;
@@ -141,15 +158,16 @@ table.datasheet th {
 }
 
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
+
 
 .blackedout {
     background-color: rgb(20, 20, 20);
 }
 .fixedheight {
     height:22px;
+}
+.fixedwidth250 {
+    width: 250px;
 }
 /* End for tables */
 
@@ -179,10 +197,7 @@ a {
     color: #0083e8;
 }
 
-b,
-strong {
-    font-weight: bold;
-}
+
 
 em {
     color:mediumblue;
@@ -214,12 +229,6 @@ img {
 
 /* safety boxes */
 
-.safety_title {
-    font-weight: bold;
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
-
 /* notices adapted from http://codepen.io/walesmd/pen/zysbv */
 
 ul.safety {
@@ -249,7 +258,7 @@ ul.safety {
      text-align: center;
      line-height: 30px;
      font-weight: bold;
-     font-family: FontAwesome;
+    font-family: FontAwesome, monospace;
      text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
  }
  
@@ -263,10 +272,10 @@ ul.safety {
  }
 
 .glassware {
-    
+
  border-color: #8bc34a;
  }
- 
+
 .glassware:before {
      content: "\f0c3";
      background-color: #8bc34a;
@@ -321,7 +330,10 @@ ul.safety {
  }
  /* end notices */
 
-
+#copyright {
+    font-weight: bold;
+    text-align: center;
+}
 
 iframe {
     display: block;
@@ -337,9 +349,7 @@ img.inlineimage {
 }
 /* For extra questions */
 .QA{
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
+    border: 1px solid grey;
     padding: 10px;
 
 }
@@ -361,10 +371,7 @@ img.inlineimage {
 .hilite span {
     color: dodgerblue;
 }
-.hilite {
-    font-weight:bold;
-    
-}
+
 .answer {
     background: lightgrey;
 }
@@ -425,9 +432,6 @@ ol.sublist {
     }
 }
 
-.safety_title {
-    font-weight: bold;
-}
 /* Graphs */
 
 .canvasContainer {
@@ -445,28 +449,12 @@ ol.sublist {
     float: left;
     width: 0.85em;
     font-size: 800%;
-    font-family: "Goudy Initialen", "Goudy Old Style", Serif;
+    font-family: "Goudy Initialen", "Goudy Old Style", serif;
     line-height: 80%;
 }
 
-.sherlock {
-    font-family: "Goudy Old Style", Serif;
-}
-.sherlock h1 {
-    border-bottom: 0px;
-    border-top: 0px;
-    padding-bottom: 3px;
-    padding-top: 24px;
-    text-align: center;
-}
 
-.sherlock h2 {
-    text-align: center;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    font-size: large;
-}
-
+/* Colours */
 .zinc {
     color: rgb(85, 192, 95);
 }
@@ -492,4 +480,36 @@ ol.sublist {
 
 .blue {
     color:rgb(0, 0, 255);
+}
+/* Sherlock Holmes Mystery */
+.mysterytable {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.mysterytable td {
+    border: 1px solid black;
+}
+.mysterytable caption{
+    width: 250px;
+}
+
+.sherlock {
+    font-family: "Goudy Old Style", serif;
+}
+.sherlock h1 {
+    border-bottom: 0px;
+    border-top: 0px;
+    padding-bottom: 3px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.sherlock h2 {
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: large;
 }
