@@ -732,13 +732,14 @@ function safety(chemicals) {
 
     };
     safety = document.getElementById("safety");
-    document.getElementById("safety").style.listStyle = "inside";
     safety.classList.add('notice');
     safety.classList.add('critical');
     var title = document.createElement('strong');
     title.appendChild(document.createTextNode('Chemical Safety'));
     var title_strong = document.createElement('p').appendChild(title);
     safety.appendChild(title_strong);
+    var list = document.createElement('ul');
+
     for (i = 0; i < chemicals.length; i++) {
         var chemical = document.createElement('li');
 
@@ -758,8 +759,9 @@ function safety(chemicals) {
 
         chemical.appendChild(document.createTextNode(safety_statements[chemicals[i]]['hazard']));
 
-        safety.appendChild(chemical);
+        list.appendChild(chemical);
     }
+    safety.appendChild(list);
 }
 
 /*
@@ -1918,12 +1920,10 @@ function makeprelab(ids) {
 }
 
 function copyright() {
-    var copy = document.getElementById('copyright');
     var copy_message = document.createElement('p');
     var year =(new Date()).getFullYear().toString();
     var message = 'Copyright McGill University' + ' ' + year;
     copy_message.appendChild(document.createTextNode(message));
-    copy.appendChild(copy_message);
 
-    document.getElementById('copyright').appendChild(copy);
+    document.getElementById('copyright').appendChild(copy_message);
 }
