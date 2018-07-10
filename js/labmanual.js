@@ -39,6 +39,12 @@ function safety(chemicals) {
             , 'hazard': 'may cause skin irritation'
         },
 
+        'acetanilide': {
+            'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-a/S25117.pdf'
+            , 'name': 'Acetanilide'
+            , 'hazard': 'causes skin and eye irritation; harmful if swallowed; harmful to aquatic life'
+        },
+
         'acetic acid': {
             'link': 'https://www.fishersci.com/msdsproxy%3FproductName%3DAC423220025%26productDescription%3DACETIC%2BACID%252C%2BGLACIA%2B2.5L%26catNo%3DAC42322-0025%2B%26vendorId%3DVN00033901%26storeId%3D10652'
             , 'name': 'Acetic acid'
@@ -336,12 +342,21 @@ function safety(chemicals) {
             , 'aka': 'Bromoacetophenone'
             , 'hazard': 'toxic if swallowed or inhaled; causes severe skin burns and eye damage'
         },
+
+        'petroleum ether': {
+            'link': 'https://www.fishersci.com/msdsproxy%3FproductName%3DP4804%26productDescription%3DPET%2BETHER%2BPESTICIDE%2BCERT%2B4L%26catNo%3DP480-4%26vendorId%3DVN00033897%26storeId%3D10652'
+            , 'name': 'Petroleum ether'
+            , 'aka': ''
+            , 'hazard': 'highly flammable; hazardous in case of inhalation or ingestion'
+        },
+
         'phenolphthalein': {
             'link': 'http://www.sciencelab.com/msds.php?msdsId=9926477'
             , 'name': 'Phenolphthalein'
             , 'aka': ''
-            , 'hazard': ' solution is hazardous in   case of skin contact(irritant), of eye contact(irritant) and of ingestion. It is slightly hazardous in case of skin contact(permeator).'
+            , 'hazard': 'hazardous in case of skin contact(irritant), of eye contact(irritant) and of ingestion. It is slightly hazardous in case of skin contact(permeator).'
         },
+
         'phenylacetylene': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC152465000&productDescription=phenylacetylene--pure-acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
             , 'name': 'Phenylacetylene'
@@ -419,6 +434,13 @@ function safety(chemicals) {
             , 'hazard': 'combustible; harmful if swallowed; fatal if inhaled; causes skin and eye irritation'
         },
 
+        'pyridinium tribromide': {
+            'link': 'https://www.geneseo.edu/sites/default/files/users/247/Pyridinium%20tribromide.pdf'
+            , 'name': 'Pyridinium tribromide'
+            , 'aka': ''
+            , 'hazard': 'causes severe skin burns and eye damage; very hazardous in case of inhalation or ingestion'
+        },
+
         'pyrrole': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC157711000&productDescription=pyrrole--extra-pure-acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
             , 'name': 'Pyrrole'
@@ -452,6 +474,13 @@ function safety(chemicals) {
             , 'name': 'Sodium hydroxide'
             , 'aka': ''
             , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation; corrosive'
+        },
+
+        'sodium hypochlorite': {
+            'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-s/S25552.pdf'
+            , 'name': 'Sodium hypochlorite'
+            , 'aka': 'Bleach'
+            , 'hazard': 'corrosive; causes skin irritation and eye damage'
         },
 
         'stilbene': {
@@ -514,27 +543,27 @@ function safety(chemicals) {
             'link': 'http://www.sciencelab.com/msds.php?msdsId=9927574'
             , 'name': 'Potassium thiocyanate'
             , 'aka': ''
-            , 'hazard': ' is hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
+            , 'hazard': 'hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
         },
 
         'ironnitrate': {
             'link': 'http://www.ch.ntu.edu.tw/~genchem99/msds/exp9/Fe(NO3)3.pdf'
             , 'name': 'Iron(III) nitrate'
             , 'aka': ''
-            , 'hazard': ' causes eye, skin irritation and irritation in case of inhalation or ingestion. It may cause CNS depression, kidney damage, kidney damage and cardiac disturbances if ingested.'
+            , 'hazard': 'causes eye, skin irritation and irritation in case of inhalation or ingestion. It may cause CNS depression, kidney damage, kidney damage and cardiac disturbances if ingested.'
         },
 
         'nitricacid': {
             'link': ' http://www.sciencelab.com/msds.php?msdsId=9926241'
             , 'name': 'Nitric acid'
             , 'aka': ''
-            , 'hazard': ' is corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
+            , 'hazard': 'corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
         }
         , 'crystal violet': {
             'link': 'https://www.fishersci.com/shop/msdsproxy?productName=23270180&productDescription=GRAM+STAIN+CRYSTL+VIOLET+GAL&catNo=23-270-180&vendorId=VN00008297&storeId=10652'
             , 'name': 'Crystal Violet'
             , 'aka': ''
-            , 'hazard': 'is flammable and hazardous in case of ingestion or inhalation. It will also dye your hand purple for a couple of days, so you may want to wear gloves.'
+            , 'hazard': 'flammable and hazardous in case of ingestion or inhalation. It will also dye your hand purple for a couple of days, so you may want to wear gloves.'
         }
         , 'calcium chloride': {
             'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251',
