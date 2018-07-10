@@ -42,18 +42,21 @@ function safety(chemicals) {
         'acetanilide': {
             'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-a/S25117.pdf'
             , 'name': 'Acetanilide'
+            , 'aka': ''
             , 'hazard': 'causes skin and eye irritation; harmful if swallowed; harmful to aquatic life'
         },
 
         'acetic acid': {
             'link': 'https://www.fishersci.com/msdsproxy%3FproductName%3DAC423220025%26productDescription%3DACETIC%2BACID%252C%2BGLACIA%2B2.5L%26catNo%3DAC42322-0025%2B%26vendorId%3DVN00033901%26storeId%3D10652'
             , 'name': 'Acetic acid'
+            , 'aka': ''
             , 'hazard': 'flammable; causes severe skin burns and eye damage'
         },
 
         'acetic anhydride': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=S25119A&productDescription=ACETIC+ANHYDRIDE+500ML&vendorId=VN00115888&countryCode=US&language=en'
             , 'name': 'Acetic anhydride'
+            , 'aka': ''
             , 'hazard': 'flammable; toxic; harmful if swallowed or inhaled; causes severe skin burns and eye damage; do not handle outside of fumehood'
         },
 
