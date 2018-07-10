@@ -394,7 +394,7 @@ function safety(chemicals) {
             , 'name': 'Nitric acid'
             , 'aka': ''
             , 'hazard': 'corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
-        }
+        },
 
         'nitrobenzaldehyde': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC156995000&productDescription=nitrobenzaldehyde--acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
@@ -708,7 +708,6 @@ function safety(chemicals) {
             , 'aka': ''
             , 'hazard': 'hazardous in case of skin/eye contact or ingestion/inhalation'
         },
-
 
         'vanillin': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC140820020&productDescription=VANILLIN+99%25+2G&vendorId=VN00032119&countryCode=US&language=en'
