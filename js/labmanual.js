@@ -98,6 +98,30 @@ function safety(chemicals) {
             , 'hazard': 'causes severe skin burns and eye damage; may cause respiratory irritation; very toxic to aquatic life'
         },
 
+        'Benedict': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9925648',
+            'name': "Benedict's Reagent",
+            'aka': '',
+            'hazard': 'Hazardous in case of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of skin contact (irritant).\n' +
+            'Liquid or spray mist may produce tissue damage particularly on mucous\n' +
+            'membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce\n' +
+            'severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.'
+        },
+
+        'benzophenone': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927097'
+            , 'name': 'Benzophenone'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin/eye contact and inhalation/ingestion; toxic to aquatic life'
+        },
+
+        'benzylamine': {
+            'link': 'https://fscimage.fishersci.com/msds/81885.htm'
+            , 'name': 'Benzylamine'
+            , 'aka': ''
+            , 'hazard': 'causes eye, skin, and respiratory burns; toxic if inhaled or absorbed through the skin; combustible; measure this chemical in a fumehood, and cover your beaker when transferring it to your own workstation to minimize odor'
+        },
+
         'bipyridyl': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AA3056918&productDescription=bipyridine-acs-&vendorId=VN00024248&keyword=true&countryCode=US&language=en'
             , 'name': '2,2\'-Bipyridyl'
@@ -112,11 +136,18 @@ function safety(chemicals) {
             , 'hazard': 'causes skin, eye, and respiratory irritation; may form combustible dust concentrations in air'
         },
 
+        'bromobenzene': {
+            'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-b/S25665A.pdf'
+            , 'name': 'Bromobenzene'
+            , 'aka': ''
+            , 'hazard': 'flammable; cause skin irritation; toxic to aquatic life; do not handle outside fumehood'
+        },
+
         'bromobutane': {
             'link': 'http://dept.harpercollege.edu/chemistry/sds/1-bromobutane.pdf'
             , 'name': 'Bromobutane'
             , 'aka': ''
-            , 'hazard': 'Flammable; hazardous in case of skin/eye contact and ingestion or inhalation'
+            , 'hazard': 'flammable; hazardous in case of skin/eye contact and ingestion or inhalation'
         },
 
         'bromophenacyl bromide': {
@@ -147,11 +178,19 @@ function safety(chemicals) {
             , 'hazard': 'spontaneously flammable in air; highly flammable liquid and vapour; may be fatal if ingested; causes severe skin burns, eye damage, respiratory irritation; reacts violently with water '
         },
 
+        'calcium chloride': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251',
+            'name': 'Calcium chloride',
+            'aka': '',
+            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
+            'skin contact (permeator).'
+        },
+
         'chlorobenzaldehyde': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC150440050&productDescription=4-CHLOROBENZALDEHYDE%2C+98+5KG&vendorId=VN00032119&countryCode=US&language=en'
             , 'name': '4-Chlorobenzaldehyde'
             , 'aka': ''
-            , 'hazard': 'harmful if swallowed; causes skin, eye, and respiratory irritation'
+            , 'hazard': 'harmful if swallowed; causes skin, eye, and respiratory irritation; avoid breathing dust'
         },
 
         'chloroform': {
@@ -166,6 +205,27 @@ function safety(chemicals) {
             , 'name': 'Copper (II) sulfate pentahydrate'
             , 'aka': ''
             , 'hazard': 'harmful if swallowed; causes skin and eye irritation'
+        },
+
+        'crystal violet': {
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=23270180&productDescription=GRAM+STAIN+CRYSTL+VIOLET+GAL&catNo=23-270-180&vendorId=VN00008297&storeId=10652'
+            , 'name': 'Crystal Violet'
+            , 'aka': ''
+            , 'hazard': 'flammable and hazardous in case of ingestion or inhalation. It will also dye your hand purple for a couple of days, so you may want to wear gloves.'
+        },
+
+        'cyclohexanol': {
+            'link': 'https://fscimage.fishersci.com/msds/05880.htm'
+            , 'name': 'Cyclohexanol'
+            , 'aka': ''
+            , 'hazard': 'flammable; harmful in case of skin/eye contact or inhalation/ingestion'
+        },
+
+        'cyclohexanone': {
+            'link': 'https://www.fishersci.com/msdsproxy%3FproductName%3DC5504%26productDescription%3DCYCLOHEXANONE%2BPURIFIED%2B4L%26catNo%3DC550-4%26vendorId%3DVN00033897%26storeId%3D10652'
+            , 'name': 'Cyclohexanone'
+            , 'aka': ''
+            , 'hazard': 'flammable; harmful in case of skin/eye contact or inhalation/ingestion'
         },
 
         'dichloromethane': {
@@ -259,11 +319,39 @@ function safety(chemicals) {
             , 'hazard': 'harmful if swallowed; causes skin irritation and serious eye damage; may cause an allergic skin reaction'
         },
 
+        'ironnitrate': {
+            'link': 'http://www.ch.ntu.edu.tw/~genchem99/msds/exp9/Fe(NO3)3.pdf'
+            , 'name': 'Iron(III) nitrate'
+            , 'aka': ''
+            , 'hazard': 'causes eye, skin irritation and irritation in case of inhalation or ingestion. It may cause CNS depression, kidney damage, kidney damage and cardiac disturbances if ingested.'
+        },
+
+        'KSCN': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927574'
+            , 'name': 'Potassium thiocyanate'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
+        },
+
         'lawsone': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC121631000&productDescription=hydroxypnaphthoquinone--acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
             , 'name': 'Lawsone'
             , 'aka': '2-Hydroxy-1,4-naphthoquinone'
             , 'hazard': 'harmful if swallowed; causes skin and eye irritation; suspected teratogen'
+        },
+
+        'magnesium': {
+            'link': 'https://www.fishersci.com/store/msds?partNumber=S25411A&productDescription=MAGNESIUM+METAL+TURNINGS+100G&vendorId=VN00115888&countryCode=US&language=en'
+            , 'name': 'Magnesium turnings'
+            , 'aka': ''
+            , 'hazard': 'releases flammable gases in contact with water'
+        },
+
+        'magnesium sulfate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927218',
+            'name': 'Magnesium sulfate',
+            'aka': 'epsom salt',
+            'hazard': 'Hazardous in case of ingestion. Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of inhalation.'
         },
 
         'methanol': {
@@ -300,6 +388,13 @@ function safety(chemicals) {
             , 'aka': ''
             , 'hazard': 'oxidizer (may intensify fire); harmful if swallowed or inhaled; causes skin irritation and serious eye damage; suspected carcinogen and teratogen; may cause allergy or asthma symptoms and respiratory irritation'
         },
+
+        'nitricacid': {
+            'link': ' http://www.sciencelab.com/msds.php?msdsId=9926241'
+            , 'name': 'Nitric acid'
+            , 'aka': ''
+            , 'hazard': 'corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
+        }
 
         'nitrobenzaldehyde': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC156995000&productDescription=nitrobenzaldehyde--acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
@@ -385,6 +480,14 @@ function safety(chemicals) {
             , 'hazard': 'causes skin, eye, and respiratory irritation '
         },
 
+        'potassium chloride': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927402',
+            'name': 'Potassium chloride',
+            'aka': '',
+            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'inhalation.'
+        },
+
         'potassium hexafluorophosphate': {
             'link': 'https://fscimage.fishersci.com/msds/56817.htm'
             , 'name': 'KPF6'
@@ -411,6 +514,14 @@ function safety(chemicals) {
             , 'name': 'Potassium oxalate monohydrate'
             , 'aka': ''
             , 'hazard': 'harmful if swallowed or in contact with skin'
+        },
+
+        'potassium sulfate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927236',
+            'name': 'Potassium sulfate',
+            'aka': '',
+            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
+            'skin contact (permeator).'
         },
 
         'proline': {
@@ -469,6 +580,29 @@ function safety(chemicals) {
             , 'hazard': 'fatal if swallowed or in contact with skin'
         },
 
+        'sodium borohydride': {
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=S67810',
+            'name': 'Sodium borohydride',
+            'aka': '',
+            'hazard': 'hazardous in case of skin/eye contact or inhalation/ingestion; corrosive; may catch fire in water; DO NOT dispose of in sink'
+        },
+
+        'sodium carbonate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927263',
+            'name': 'Sodium carbonate',
+            'aka': '',
+            'hazard': ': Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation\n' +
+            '(lung irritant).\n'
+        },
+
+        'sodium chloride': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927593',
+            'name': 'Sodium chloride',
+            'aka': 'table salt',
+            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'inhalation.'
+        },
+
         'sodium hydroxide': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=S39250&productDescription=sodium-hydroxide-granularnffccepbpjp-fisher-chemical&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Sodium hydroxide'
@@ -483,6 +617,13 @@ function safety(chemicals) {
             , 'hazard': 'corrosive; causes skin irritation and eye damage'
         },
 
+        'sodium sulfate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927278',
+            'name': 'Sodium sulfate',
+            'aka': '',
+            'hazard': 'Hazardous in case of eye contact (irritant). Slightly hazardous in case of skin contact (irritant), of ingestion, of inhalation.'
+        },
+
         'stilbene': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC161041000&productDescription=TRANS-STILBENE%2C+96%25+100GR&vendorId=VN00032119&countryCode=US&language=en'
             , 'name': 'Stilbene'
@@ -494,7 +635,15 @@ function safety(chemicals) {
             'link': 'https://www.fishersci.com/store/msds?partNumber=A298212&productDescription=sulfuric-acid-technical-fisher-chemical&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Sulfuric acid'
             , 'aka': ''
-            , 'hazard': 'may be corrosive to metals; causes severe skin burns, eye damage, and respiratory irritation'
+            , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation; may be corrosive to metals'
+        },
+
+        'sucrose': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927285',
+            'name': 'Sucrose',
+            'aka': 'table sugar',
+            'hazard': 'Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'inhalation.\n'
         },
 
         'thionyl chloride': {
@@ -529,112 +678,58 @@ function safety(chemicals) {
             'link': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
             , 'name': 'Unknown'
             , 'aka': ''
-            , 'hazard': ' is  slightly  hazardous  in  case  of  skin  contact(irritant), eye contact (irritant) and inhalation or ingestion.'
+            , 'hazard': ' is  slightly  hazardous  in  case  of  skin  contact (irritant), eye contact (irritant) and inhalation or ingestion.'
+        },
+
+        'unknown_acetophenones': {
+            'link': 'https://www.youtube.com/watch?v=32FB-gYr49Y'
+            , 'name': 'Unknown acetophenones'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin/eye contact or ingestion/inhalation'
+        },
+
+        'unknown_benzaldehydes': {
+            'link': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+            , 'name': 'Unknown benzaldehydes'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin/eye contact or ingestion/inhalation'
+        },
+
+        'unknown_aldol': {
+            'link': 'https://www.youtube.com/watch?v=QH2-TGUlwu4'
+            , 'name': 'Unknown aldol products'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin/eye contact or ingestion/inhalation'
+        },
+
+
+        'vanillin': {
+            'link': 'https://www.fishersci.com/store/msds?partNumber=AC140820020&productDescription=VANILLIN+99%25+2G&vendorId=VN00032119&countryCode=US&language=en'
+            , 'name': 'Vanillin'
+            , 'aka': ''
+            , 'hazard': 'slightly hazardous in case of skin contact (irritant)'
+        },
+
+        'ylide': {
+            'link': 'https://www.fishersci.com/store/msds?partNumber=AC108290250&productDescription=%28CARBETHOXYMETHYLENE%29-TR+25GR&vendorId=VN00032119&countryCode=US&language=en'
+            , 'name': 'Ylide'
+            , 'aka': '(Carboxymethylene)triphenylphosphorane'
+            , 'hazard': 'slightly hazardous in case of skin/eye contact or inhalation/ingestion (irritant)'
         },
 
         'kbiph': {
             'link': 'http://www.sciencelab.com/msds.php?msdsId=9926672'
             , 'name': 'Potassium biphthalate'
             , 'aka': ''
-            , 'hazard': ' is slightly hazardous  in case of skin contact(irritant),eye contact (irritant), ingestion and inhalation.'
+            , 'hazard': ' is slightly hazardous  in case of skin contact (irritant), eye contact (irritant), ingestion and inhalation.'
         },
 
-        'KSCN': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927574'
-            , 'name': 'Potassium thiocyanate'
-            , 'aka': ''
-            , 'hazard': 'hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
-        },
 
-        'ironnitrate': {
-            'link': 'http://www.ch.ntu.edu.tw/~genchem99/msds/exp9/Fe(NO3)3.pdf'
-            , 'name': 'Iron(III) nitrate'
-            , 'aka': ''
-            , 'hazard': 'causes eye, skin irritation and irritation in case of inhalation or ingestion. It may cause CNS depression, kidney damage, kidney damage and cardiac disturbances if ingested.'
-        },
 
-        'nitricacid': {
-            'link': ' http://www.sciencelab.com/msds.php?msdsId=9926241'
-            , 'name': 'Nitric acid'
-            , 'aka': ''
-            , 'hazard': 'corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
-        }
-        , 'crystal violet': {
-            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=23270180&productDescription=GRAM+STAIN+CRYSTL+VIOLET+GAL&catNo=23-270-180&vendorId=VN00008297&storeId=10652'
-            , 'name': 'Crystal Violet'
-            , 'aka': ''
-            , 'hazard': 'flammable and hazardous in case of ingestion or inhalation. It will also dye your hand purple for a couple of days, so you may want to wear gloves.'
-        }
-        , 'calcium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251',
-            'name': 'Calcium chloride',
-            'aka': '',
-            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
-            'skin contact (permeator).'
-        }
-        , 'Benedict': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9925648',
-            'name': "Benedict's Reagent",
-            'aka': '',
-            'hazard': 'Hazardous in case of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of skin contact (irritant).\n' +
-            'Liquid or spray mist may produce tissue damage particularly on mucous\n' +
-            'membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce\n' +
-            'severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.'
-        }
-        , 'sucrose': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927285',
-            'name': 'Sucrose',
-            'aka': 'table sugar',
-            'hazard': 'Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
-            'inhalation.\n'
-        }
-        , 'sodium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927593',
-            'name': 'Sodium chloride',
-            'aka': 'table salt',
-            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
-            'inhalation.'
-        }
-        , 'potassium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927402',
-            'name': 'Potassium chloride',
-            'aka': '',
-            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
-            'inhalation.'
-        }
-        , 'magnesium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927218',
-            'name': 'Magnesium sulfate',
-            'aka': 'epsom salt',
-            'hazard': 'Hazardous in case of ingestion. Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of inhalation.'
-        }
-        , 'potassium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927236',
-            'name': 'Potassium sulfate',
-            'aka': '',
-            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
-            'skin contact (permeator).'
-        }
-        , 'sodium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927278',
-            'name': 'Sodium sulfate',
-            'aka': '',
-            'hazard': 'Hazardous in case of eye contact (irritant). Slightly hazardous in case of skin contact (irritant), of ingestion, of inhalation.'
-        }
-        , 'potassium carbonate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926681',
-            'name': 'Potassium carbonate',
-            'aka': '',
-            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of eye\n' +
-            'contact (corrosive).\n'
-        }
-        , 'sodium carbonate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927263',
-            'name': 'Sodium carbonate',
-            'aka': '',
-            'hazard': ': Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation\n' +
-            '(lung irritant).\n'
-        }
+
+
+
+
 
     };
     safety = document.getElementById("safety");
