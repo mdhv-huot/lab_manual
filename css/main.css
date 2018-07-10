@@ -84,9 +84,7 @@ body {
     @page {
         margin: 1cm 2cm 1cm 2cm;
     }
-    img {
-        max-width: 100% !important;
-    }
+
     .notice {
         page-break-inside: avoid;
     }
@@ -218,7 +216,9 @@ img {
 .figure {
 	counter-increment: figures;
 }
-
+.split img{
+    max-width: 45%;
+}
 .figure figcaption:before {
 	content: 'Figure ' counter(figures) ' - ';
     font-weight: bold;
@@ -231,8 +231,8 @@ img {
 
 /* notices adapted from http://codepen.io/walesmd/pen/zysbv */
 
-ul.safety {
-    list-style-position: inside;
+ul#safety{
+    list-style-position: outside;
     text-indent: 1em;
 }
 
@@ -430,8 +430,13 @@ ol.sublist {
     .datainfo {
         min-width: 200px;
     }
-}
 
+}
+@media screen and (min-width: 450px) {
+    .paget {
+        max-width: 350px;
+    }
+}
 /* Graphs */
 
 .canvasContainer {
@@ -513,3 +518,4 @@ ol.sublist {
     padding-top: 3px;
     font-size: large;
 }
+

@@ -394,7 +394,7 @@ function safety(chemicals) {
             , 'name': 'Nitric acid'
             , 'aka': ''
             , 'hazard': 'corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
-        }
+        },
 
         'nitrobenzaldehyde': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC156995000&productDescription=nitrobenzaldehyde--acros-organicstrade&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
@@ -733,13 +733,14 @@ function safety(chemicals) {
 
     };
     safety = document.getElementById("safety");
-    document.getElementById("safety").style.listStyle = "inside";
     safety.classList.add('notice');
     safety.classList.add('critical');
     var title = document.createElement('strong');
     title.appendChild(document.createTextNode('Chemical Safety'));
     var title_strong = document.createElement('p').appendChild(title);
     safety.appendChild(title_strong);
+    var list = document.createElement('ul');
+
     for (i = 0; i < chemicals.length; i++) {
         var chemical = document.createElement('li');
 
@@ -759,8 +760,9 @@ function safety(chemicals) {
 
         chemical.appendChild(document.createTextNode(safety_statements[chemicals[i]]['hazard']));
 
-        safety.appendChild(chemical);
+        list.appendChild(chemical);
     }
+    safety.appendChild(list);
 }
 
 /*
@@ -1919,12 +1921,10 @@ function makeprelab(ids) {
 }
 
 function copyright() {
-    var copy = document.getElementById('copyright');
     var copy_message = document.createElement('p');
     var year =(new Date()).getFullYear().toString();
     var message = 'Copyright McGill University' + ' ' + year;
     copy_message.appendChild(document.createTextNode(message));
-    copy.appendChild(copy_message);
 
-    document.getElementById('copyright').appendChild(copy);
+    document.getElementById('copyright').appendChild(copy_message);
 }
