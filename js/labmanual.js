@@ -99,13 +99,10 @@ function safety(chemicals) {
         },
 
         'Benedict': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9925648',
-            'name': "Benedict's Reagent",
-            'aka': '',
-            'hazard': 'Hazardous in case of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of skin contact (irritant).\n' +
-            'Liquid or spray mist may produce tissue damage particularly on mucous\n' +
-            'membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce\n' +
-            'severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.'
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9925648'
+            , 'name': "Benedict's Reagent"
+            , 'aka': ''
+            , 'hazard': 'Hazardous in case of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of skin contact (irritant); liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.'
         },
 
         'benzophenone': {
@@ -179,10 +176,10 @@ function safety(chemicals) {
         },
 
         'calcium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251',
-            'name': 'Calcium chloride',
-            'aka': '',
-            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251'
+            , 'name': 'Calcium chloride'
+            , 'aka': ''
+            , 'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
             'skin contact (permeator).'
         },
 
@@ -348,10 +345,10 @@ function safety(chemicals) {
         },
 
         'magnesium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927218',
-            'name': 'Magnesium sulfate',
-            'aka': 'epsom salt',
-            'hazard': 'Hazardous in case of ingestion. Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of inhalation.'
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927218'
+            , 'name': 'Magnesium sulfate'
+            , 'aka': 'epsom salt'
+            , 'hazard': 'Hazardous in case of ingestion. Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of inhalation.'
         },
 
         'methanol': {
@@ -481,10 +478,10 @@ function safety(chemicals) {
         },
 
         'potassium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927402',
-            'name': 'Potassium chloride',
-            'aka': '',
-            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927402'
+            , 'name': 'Potassium chloride'
+            , 'aka': ''
+            , 'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
             'inhalation.'
         },
 
@@ -517,10 +514,10 @@ function safety(chemicals) {
         },
 
         'potassium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927236',
-            'name': 'Potassium sulfate',
-            'aka': '',
-            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927236'
+            , 'name': 'Potassium sulfate'
+            , 'aka': ''
+            , 'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
             'skin contact (permeator).'
         },
 
@@ -588,25 +585,25 @@ function safety(chemicals) {
         },
 
         'sodium borohydride': {
-            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=S67810',
-            'name': 'Sodium borohydride',
-            'aka': '',
-            'hazard': 'hazardous in case of skin/eye contact or inhalation/ingestion; corrosive; may catch fire in water; DO NOT dispose of in sink'
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=S67810'
+            , 'name': 'Sodium borohydride'
+            , 'aka': ''
+            , 'hazard': 'hazardous in case of skin/eye contact or inhalation/ingestion; corrosive; may catch fire in water; DO NOT dispose of in sink'
         },
 
         'sodium carbonate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927263',
-            'name': 'Sodium carbonate',
-            'aka': '',
-            'hazard': ': Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation\n' +
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927263'
+            , 'name': 'Sodium carbonate'
+            , 'aka': ''
+            , 'hazard': ': Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation\n' +
             '(lung irritant).\n'
         },
 
         'sodium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927593',
-            'name': 'Sodium chloride',
-            'aka': 'table salt',
-            'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927593'
+            , 'name': 'Sodium chloride'
+            , 'aka': 'table salt'
+            , 'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
             'inhalation.'
         },
 
@@ -625,10 +622,10 @@ function safety(chemicals) {
         },
 
         'sodium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927278',
-            'name': 'Sodium sulfate',
-            'aka': '',
-            'hazard': 'Hazardous in case of eye contact (irritant). Slightly hazardous in case of skin contact (irritant), of ingestion, of inhalation.'
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927278'
+            , 'name': 'Sodium sulfate'
+            , 'aka': ''
+            , 'hazard': 'Hazardous in case of eye contact (irritant). Slightly hazardous in case of skin contact (irritant), of ingestion, of inhalation.'
         },
 
         'stilbene': {
@@ -646,10 +643,10 @@ function safety(chemicals) {
         },
 
         'sucrose': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927285',
-            'name': 'Sucrose',
-            'aka': 'table sugar',
-            'hazard': 'Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927285'
+            , 'name': 'Sucrose'
+            , 'aka': 'table sugar'
+            , 'hazard': 'Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
             'inhalation.\n'
         },
 
@@ -708,7 +705,6 @@ function safety(chemicals) {
             , 'aka': ''
             , 'hazard': 'hazardous in case of skin/eye contact or ingestion/inhalation'
         },
-
 
         'vanillin': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AC140820020&productDescription=VANILLIN+99%25+2G&vendorId=VN00032119&countryCode=US&language=en'
