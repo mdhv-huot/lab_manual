@@ -524,6 +524,13 @@ function safety(chemicals) {
             'skin contact (permeator).'
         },
 
+        'kbiph': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926672'
+            , 'name': 'Potassium biphthalate'
+            , 'aka': ''
+            , 'hazard': ' is slightly hazardous  in case of skin contact (irritant), eye contact (irritant), ingestion and inhalation.'
+        },
+
         'proline': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=BP392100&productDescription=lproline-white-crystals-or-crystalline-powder-fisher-bioreagents&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'L-Proline methyl ester hydrochloride'
@@ -717,19 +724,12 @@ function safety(chemicals) {
             , 'hazard': 'slightly hazardous in case of skin/eye contact or inhalation/ingestion (irritant)'
         },
 
-        'kbiph': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926672'
-            , 'name': 'Potassium biphthalate'
+        'template_entry': {
+            'link': ''
+            , 'name': ''
             , 'aka': ''
-            , 'hazard': ' is slightly hazardous  in case of skin contact (irritant), eye contact (irritant), ingestion and inhalation.'
-        },
-
-
-
-
-
-
-
+            , 'hazard': ''
+        }
 
     };
     safety = document.getElementById("safety");
