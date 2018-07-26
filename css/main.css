@@ -29,6 +29,8 @@ body {
     max-width: 600px;
     padding: 2em 2em 4em;
     counter-reset: figures;
+    counter-reset: tables;
+    counter-reset: schemes;
 }
 /* For smaller screens*/
  @media screen and (max-width: 650px) {
@@ -113,7 +115,7 @@ table.datasheet {
 }
 
 table.datasheet tr:nth-child(odd) {
-    background-color: #cccccc;
+    background-color: #dddde7;
 }
 
 table.datasheet th {
@@ -150,19 +152,22 @@ table.datasheet th {
     overflow-y: hidden;
 }
 
+.padbottom {
+    padding-bottom: 1.5em;
+}
 .datainfo {
     border-bottom: 1pt solid black;
     min-width: 300px;
 }
-
-
-
 
 .blackedout {
     background-color: rgb(20, 20, 20);
 }
 .fixedheight {
     height:22px;
+}
+.fixedheight110 {
+    height:100px;
 }
 .fixedwidth250 {
     width: 250px;
@@ -216,15 +221,45 @@ img {
 .figure {
 	counter-increment: figures;
 }
+
+.scheme {
+    counter-increment: schemes;
+}
+.double img{
+    max-width: 45%;
+}
+
 .split img{
     max-width: 45%;
+    display: inline;
 }
 .figure figcaption:before {
 	content: 'Figure ' counter(figures) ' - ';
     font-weight: bold;
 }
 
+.scheme figcaption:before {
+    content: 'Scheme 'counter(schemes) ' - ';
+    font-weight: bold;
+}
 
+.labtable caption {
+    counter-increment: tables;
+}
+
+.labtable caption:before {
+    content: "Table " counter(tables) ' - ';
+    font-weight: bold;
+}
+
+.datasheet caption {
+    counter-increment: tables;
+}
+
+.datasheet caption:before {
+    content: "Table " counter(tables) ' - ';
+    font-weight: bold;
+}
 /* end images and figure count*/
 
 /* safety boxes */
@@ -347,6 +382,11 @@ img.inlineimage {
     height: 12px;
     display: inline;
 }
+
+.centered {
+    text-align: center;
+}
+
 /* For extra questions */
 .QA{
     border: 1px solid grey;
@@ -483,6 +523,10 @@ ol.sublist {
     color: rgb(255, 0, 0);
 }
 
+.grey {
+    color: rgb(150, 150, 150);
+}
+
 .blue {
     color:rgb(0, 0, 255);
 }
@@ -519,3 +563,6 @@ ol.sublist {
     font-size: large;
 }
 
+.copperlab {
+    max-width: 800px;
+}

@@ -197,6 +197,14 @@ function safety(chemicals) {
             , 'hazard': 'harmful if swallowed; causes skin and eye irritation; toxic if inhaled; suspected carcinogen'
         },
 
+        'copper nitrate': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927142',
+            'name': 'Copper nitrate',
+            'aka': '',
+            'hazard': 'Slightly hazardous in case of skin contact (sensitizer).  Repeated or prolonged exposure to the\n' +
+        'substance can produce target organs damage.'
+        },
+
         'copper sulfate': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=BP346500&productDescription=copper-ii-sulfate-pentahydrate-crystalline-blue-fisher-bioreagents&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Copper (II) sulfate pentahydrate'
@@ -1902,7 +1910,7 @@ function makeprelab(ids) {
     var header = document.createElement('h4');
     header.appendChild(document.createTextNode('Pre-Lab Questions (Compiled from the Lab Manual)'));
     var description = document.createElement('p');
-    description.appendChild(document.createTextNode('Answer these questions on the back of the data sheet that you will han into your TA.'));
+    description.appendChild(document.createTextNode('Answer these questions on the back of the data sheet that you will hand into your TA.'));
     var prelab_list = document.createElement('ol');
     for (i = 0; i < ids.length; i++) {
         var text = document.getElementById(ids[i]).textContent;
