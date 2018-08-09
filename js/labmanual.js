@@ -12,7 +12,6 @@ function printDiv(printableArea) {
 }
 
 
-
 <!-- MSDS -->
 
 function safety(chemicals) {
@@ -97,7 +96,7 @@ function safety(chemicals) {
         'ammonia': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=S25164A&productDescription=ammonia-solution&vendorId=VN00115888&keyword=true&countryCode=US&language=en'
             , 'name': 'Aqueous ammonia'
-            , 'aka': ''
+            , 'aka': 'Ammonium hydroxide'
             , 'hazard': 'causes severe skin burns and eye damage; may cause respiratory irritation; very toxic to aquatic life'
         },
 
@@ -214,7 +213,12 @@ function safety(chemicals) {
             , 'aka': ''
             , 'hazard': 'harmful if swallowed; causes skin and eye irritation'
         },
-
+         'cobalt chloride': {
+             'link': 'http://www.sciencelab.com/msds.php?msdsId=9925768',
+             'name': 'cobalt (II) chloride solution with HCl',
+             'aka': '',
+             'hazard': 'Potential Acute Health Effects: Very hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, . Hazardous in case of skin contact (corrosive, sensitizer, permeator), of eye contact (corrosive), of inhalation (lung sensitizer). Non-corrosive for lungs. Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath. Severe over-exposure can result in death. Inflammation of the eye is characterized by redness, watering, and itching. Skin inflammation is characterized by itching, scaling, reddening, or, occasionally, blistering. DEVELOPMENTAL TOXICITY: Classified Reproductive system/ toxin/male [POSSIBLE] [Cobalt chloride hexahydrate]. The substance may be toxic to blood, lungs, upper respiratory tract, skin, eyes, , teeth. Repeated or prolonged exposure to the substance can produce target organs damage. Repeated or\ prolonged contact with spray mist may produce chronic eye irritation and severe skin irritation. Repeated or prolonged exposure to spray mist may produce respiratory tract irritation leading to frequent attacks of bronchial infection. Repeated exposure to a highly toxic material may produce general deterioration of health by an accumulation in one or many human organs.'
+         },
         'crystal violet': {
             'link': 'https://www.fishersci.com/shop/msdsproxy?productName=23270180&productDescription=GRAM+STAIN+CRYSTL+VIOLET+GAL&catNo=23-270-180&vendorId=VN00008297&storeId=10652'
             , 'name': 'Crystal Violet'
@@ -298,7 +302,12 @@ function safety(chemicals) {
             , 'aka': ''
             , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation (wear gloves); corrosive; do not handle outside of fumehood'
         },
-
+         'hydrogen peroxide': {
+             'link': 'http://www.sciencelab.com/msds.php?msdsId=9924299',
+             'name': 'hydrogen peroxide',
+             'aka': '',
+             'hazard': ' very hazardous in case of skin contact (irritant) and of eye contact(irritant). Hazardous in case of skin contact (corrosive),of eye contact (corrosive) and of ingestion. Slightly hazardous in case of inhalation (lung sensitizer). Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.Prolonged exposure may result in skin burns and ulcerations. Over-exposure by inhalation may cause respiratory irritation.  Inflammation of the eye is characterized by redness,watering, and itching. Skin inflammation is characterized by itching, scaling, reddening, or,occasionally, blistering.'
+         },
         'imidazole': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=O3196500&productDescription=imidazole-certified-acs-fisher-chemical&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
             , 'name': 'Imidazole'
@@ -574,6 +583,12 @@ function safety(chemicals) {
             , 'hazard': 'flammable; toxic if swallowed; harmful if inhaled; causes serious eye damage'
         },
 
+        'salicylic acid': {
+            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927249',
+            'name': 'salicylic acid',
+            'aka': '',
+            'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation (lung irritant). Slightly hazardous in case of skin contact (permeator). Severe over-exposure can result in death.'
+        },
         'sodum acetate': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=AA1155430&productDescription=sodium-acetate-anhydrous-alfa-aesartrade&vendorId=VN00024248&keyword=true&countryCode=US&language=en'
             , 'name': 'Sodium acetate'
@@ -1791,7 +1806,7 @@ function bibentry(entry){
     var authors = document.createElement('span');
     if (result[entry]['ENTRYTYPE'] == 'comment')
     {
-        var comment = results[entry]['comment'];
+        var comment = result[entry]['comment'];
         var comments = document.createElement('span');
         comments.appendChild(document.createTextNode(comment));
         item.appendChild(comments);
@@ -1934,4 +1949,222 @@ function copyright() {
     copy_message.appendChild(document.createTextNode(message));
 
     document.getElementById('copyright').appendChild(copy_message);
+}
+
+
+
+function write_molecule (molfile, name) {
+
+    var transformBallAndStick = new ChemDoodle.TransformCanvas3D(name, 250, 250);
+    transformBallAndStick.specs.set3DRepresentation('Ball and Stick');
+    transformBallAndStick.specs.backgroundColor = 'black';
+    ChemDoodle.ELEMENT['Ag'].jmolColor = '#646464';
+    ChemDoodle.ELEMENT['Ag'].vdWRadius = '1.6';
+    console.log(ChemDoodle.ELEMENT['Ag'].vdWRadius);
+    ChemDoodle.ELEMENT['Pt'].vdWRadius = '1.6';
+    ChemDoodle.ELEMENT['Pt'].jmolColor = '#646464';
+    console.log(ChemDoodle.ELEMENT['Pt'].vdWRadius);
+    ChemDoodle.ELEMENT['Cd'].jmolColor = '#646464';
+    ChemDoodle.ELEMENT['Cd'].vdWRadius = '1.6';
+    console.log(ChemDoodle.ELEMENT['Cd'].vdWRadius);
+    ChemDoodle.ELEMENT['Co'].jmolColor = '#646464';
+    ChemDoodle.ELEMENT['Co'].vdWRadius = '1.6';
+    console.log(ChemDoodle.ELEMENT['Co'].vdWRadius);
+    ChemDoodle.ELEMENT['Cl'].vdWRadius = '1.6';
+
+    var molecule = ChemDoodle.readMOL(molFile, 1);
+
+    transformBallAndStick.loadMolecule(molecule);
+    console.log(transformBallAndStick);
+}
+
+var cobalt = '[Co(NH3)4]Cl3.mol\n' +
+'\n' +
+'\n' +
+' 25 24  0  0  0                 1 V2000\n' +
+'    0.0205    0.7986   -0.1103 Co  0  0  0  0  0\n' +
+'    0.9479   -0.0092    1.5451 N   0  3  0  0  0\n' +
+'   -0.7905    2.2746    1.0800 N   0  3  0  0  0\n' +
+'   -1.6335   -0.3848    0.2333 N   0  3  0  0  0\n' +
+'    1.6503    2.0110   -0.4681 N   0  3  0  0  0\n' +
+'    0.8662   -0.6817   -1.2715 N   0  3  0  0  0\n' +
+'   -0.9139    1.5787   -1.7751 N   0  3  0  0  0\n' +
+'    1.5884   -0.7697    1.2225 H   0  0  0  0  0\n' +
+'    0.2100   -0.3931    2.1783 H   0  0  0  0  0\n' +
+'    1.4864    0.7493    2.0216 H   0  0  0  0  0\n' +
+'   -1.3797    2.8945    0.4796 H   0  0  0  0  0\n' +
+'   -0.0056    2.8146    1.5098 H   0  0  0  0  0\n' +
+'   -1.3705    1.8163    1.8192 H   0  0  0  0  0\n' +
+'   -2.3878   -0.0929   -0.4291 H   0  0  0  0  0\n' +
+'   -1.9369   -0.2426    1.2235 H   0  0  0  0  0\n' +
+'   -1.3635   -1.3811    0.0692 H   0  0  0  0  0\n' +
+'    1.3961    2.6852   -1.2254 H   0  0  0  0  0\n' +
+'    2.4496    1.4065   -0.7651 H   0  0  0  0  0\n' +
+'    1.8805    2.5188    0.4161 H   0  0  0  0  0\n' +
+'    0.6054   -0.5061   -2.2685 H   0  0  0  0  0\n' +
+'    0.4935   -1.6032   -0.9486 H   0  0  0  0  0\n' +
+'    1.9034   -0.6398   -1.1480 H   0  0  0  0  0\n' +
+'   -0.7175    0.9483   -2.5855 H   0  0  0  0  0\n' +
+'   -0.5294    2.5348   -1.9491 H   0  0  0  0  0\n' +
+'   -1.9405    1.6234   -1.5831 H   0  0  0  0  0\n' +
+'  1  2  1  1  0  0\n' +
+'  1  3  1  1  0  0\n' +
+'  1  4  1  0  0  0\n' +
+'  1  5  1  0  0  0\n' +
+'  1  6  1  6  0  0\n' +
+'  1  7  1  6  0  0\n' +
+'  2  8  1  0  0  0\n' +
+'  2  9  1  1  0  0\n' +
+'  2 10  1  1  0  0\n' +
+'  3 11  1  6  0  0\n' +
+'  3 12  1  0  0  0\n' +
+'  3 13  1  1  0  0\n' +
+'  4 14  1  6  0  0\n' +
+'  4 15  1  1  0  0\n' +
+'  4 16  1  0  0  0\n' +
+'  5 17  1  6  0  0\n' +
+'  5 18  1  0  0  0\n' +
+'  5 19  1  1  0  0\n' +
+'  6 20  1  6  0  0\n' +
+'  6 21  1  0  0  0\n' +
+'  6 22  1  0  0  0\n' +
+'  7 23  1  6  0  0\n' +
+'  7 24  1  0  0  0\n' +
+'  7 25  1  0  0  0\n' +
+'M  END';
+
+var silver = 'AgNH32+\n' +
+    ' \n' +
+    '\n' +
+    '  9  8  0  0  0  0  0  0  0  0  2 V2000\n' +
+    '   -0.4863    0.1073   -0.0001 Ag  0  3  0  0  0  0\n' +
+    '    0.7410   -1.4963   -0.0000 N   0  0  0  0  0  0\n' +
+    '   -1.7143    1.7112    0.0001 N   0  0  0  0  0  0\n' +
+    '    0.8602   -1.8976   -0.9302 H   0  0  0  0  0  0\n' +
+    '    1.6783   -1.2713    0.3353 H   0  0  0  0  0  0\n' +
+    '    0.3991   -2.2506    0.5945 H   0  0  0  0  0  0\n' +
+    '   -1.5778    2.3076    0.8156 H   0  0  0  0  0  0\n' +
+    '   -1.5778    2.3078   -0.8160 H   0  0  0  0  0  0\n' +
+    '   -2.6997    1.4488   -0.0001 H   0  0  0  0  0  0\n' +
+    '  2  1  1  0     0\n' +
+    '  3  1  1  0     0\n' +
+    '  2  4  1  0     0\n' +
+    '  2  5  1  0     0\n' +
+    '  2  6  1  0     0\n' +
+    '  3  7  1  0     0\n' +
+    '  3  8  1  0     0\n' +
+    '  3  9  1  0     0\n' +
+    'M  CHG  1   1   1 \n' +
+    'M  END';
+
+var platinum = 'PtNH342+\n' +
+    ' \n' +
+    '\n' +
+    ' 17 16  0  0  0  0  0  0  0  0  2 V2000\n' +
+    '   -0.4659   -0.3865   -0.0001 Pt  0  2  0  0  0  0\n' +
+    '    1.2692    1.1525   -0.0001 N   0  0  0  0  0  0\n' +
+    '   -2.0053    1.3480   -0.0001 N   0  0  0  0  0  0\n' +
+    '    1.0737   -2.1208   -0.0001 N   0  0  0  0  0  0\n' +
+    '   -2.2006   -1.9254   -0.0001 N   0  0  0  0  0  0\n' +
+    '    1.8716    1.0568    0.8169 H   0  0  0  0  0  0\n' +
+    '    1.8716    1.0568   -0.8170 H   0  0  0  0  0  0\n' +
+    '    0.9310    2.1141   -0.0001 H   0  0  0  0  0  0\n' +
+    '   -2.6147    1.3246   -0.8169 H   0  0  0  0  0  0\n' +
+    '   -2.6147    1.3246    0.8168 H   0  0  0  0  0  0\n' +
+    '   -1.5551    2.2624   -0.0001 H   0  0  0  0  0  0\n' +
+    '    0.9784   -2.7232    0.8168 H   0  0  0  0  0  0\n' +
+    '    0.9784   -2.7233   -0.8169 H   0  0  0  0  0  0\n' +
+    '    2.0350   -1.7810   -0.0001 H   0  0  0  0  0  0\n' +
+    '   -2.1776   -2.5348   -0.8168 H   0  0  0  0  0  0\n' +
+    '   -2.1776   -2.5348    0.8167 H   0  0  0  0  0  0\n' +
+    '   -3.1145   -1.4737   -0.0001 H   0  0  0  0  0  0\n' +
+    '  2  1  1  0     0\n' +
+    '  3  1  1  0     0\n' +
+    '  4  1  1  0     0\n' +
+    '  5  1  1  0     0\n' +
+    '  2  6  1  0     0\n' +
+    '  2  7  1  0     0\n' +
+    '  2  8  1  0     0\n' +
+    '  3  9  1  0     0\n' +
+    '  3 10  1  0     0\n' +
+    '  3 11  1  0     0\n' +
+    '  4 12  1  0     0\n' +
+    '  4 13  1  0     0\n' +
+    '  4 14  1  0     0\n' +
+    '  5 15  1  0     0\n' +
+    '  5 16  1  0     0\n' +
+    '  5 17  1  0     0\n' +
+    'M  CHG  1   1   2 \n' +
+    'M  END';
+
+var cadmium = '\n' +
+    '  WLViewer         3D                             0\n' +
+    '\n' +
+    '  5  4  0  0  0  0  0  0  0  0  0\n' +
+    '   -0.1205    0.7643    3.7726 Co  0  0  0  0  0  0  0  0  0  1\n' +
+    '    1.5610    1.8794    2.8189 Cl  0  0  0  0  0  0  0  0  0  2\n' +
+    '    0.7929   -0.6895    5.2937 Cl  0  0  0  0  0  0  0  0  0  3\n' +
+    '   -1.8020    1.8794    4.7263 Cl  0  0  0  0  0  0  0  0  0 19\n' +
+    '   -1.0340   -0.6895    2.2515 Cl  0  0  0  0  0  0  0  0  0 20\n' +
+    '  1  2  1  0  0  0\n' +
+    '  1  3  1  0  0  0\n' +
+    '  1  4  1  0  0  0\n' +
+    '  1  5  1  0  0  0\n' +
+    'M  END';
+
+$(function() {
+    var $question = $('.quest');
+    var $answer = $('.answer');
+    var $correct = $('.correct');
+    var $message = $('#smalldis');
+    var $graph = $('#graph_qs');
+
+    $answer.hide();
+    $message.hide();
+
+
+    $('.button').on('click', function(e) {
+        $parent = $(this).parent();
+        $sibling = $parent.next();
+        $grandpa = $parent.parent();
+        $correct = $grandpa.children('.A').children('.correct');
+        $sibling.show();
+        $correct.addClass('hilite');
+        $(this).hide();
+    });
+
+    if ($(window).width() < 650) {
+        $message.show();
+        $graph.hide();
+    }
+
+    $(window).resize(function() {
+        if ($(window).width() > 649) {
+            $message.hide();
+            $graph.show();
+        }
+
+        else {
+            $message.show();
+            $graph.hide();
+        }
+
+
+    });
+
+
+});
+
+function mystery () {
+    var $NaCl = (5 + Math.random()).toFixed(1);
+    var $water = (25 + Math.random()).toFixed(1);
+    var $NaCl_conc = concentration($NaCl, 58.44, $water/1000).toFixed(1);
+    $('#NaCl').append($NaCl);
+    $('#water').append($water);
+    $('#NaCl_conc').append($NaCl_conc);
+}
+
+function concentration (mass, molar_mass, volume) {
+    var conc = mass/(molar_mass* volume);
+    return conc
 }

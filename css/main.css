@@ -28,10 +28,14 @@ body {
     margin: 0 auto;
     max-width: 600px;
     padding: 2em 2em 4em;
-    counter-reset: figures;
-    counter-reset: tables;
-    counter-reset: schemes;
+    counter-reset: figures tables schemes;
+
 }
+
+dd {
+    font-style: italic;
+}
+
 /* For smaller screens*/
  @media screen and (max-width: 650px) {
     body {
@@ -102,7 +106,9 @@ body {
     }
 }
 /* end printing*/
-
+video {
+    max-width: 640px;
+}
 /* For tables */
 table {
     border-collapse: collapse;
@@ -171,6 +177,9 @@ table.datasheet th {
 }
 .fixedwidth250 {
     width: 250px;
+}
+.fixedwidth400 {
+    width: 400px;
 }
 /* End for tables */
 
@@ -248,7 +257,7 @@ img {
 }
 
 .labtable caption:before {
-    content: "Table " counter(tables) ' - ';
+    content: 'Table ' counter(tables) ' - ';
     font-weight: bold;
 }
 
@@ -257,7 +266,7 @@ img {
 }
 
 .datasheet caption:before {
-    content: "Table " counter(tables) ' - ';
+    content: 'Table ' counter(tables) ' - ';
     font-weight: bold;
 }
 /* end images and figure count*/
@@ -476,6 +485,11 @@ ol.sublist {
     .paget {
         max-width: 350px;
     }
+    .smallfig-right {
+        float: right;
+        max-width:50%;
+
+    }
 }
 /* Graphs */
 
@@ -530,6 +544,14 @@ ol.sublist {
 .blue {
     color:rgb(0, 0, 255);
 }
+
+.green {
+    color:rgb(0, 160, 0);
+}
+.whitebg {
+    background: #fff;
+}
+
 /* Sherlock Holmes Mystery */
 .mysterytable {
     margin-left: auto;
@@ -563,6 +585,59 @@ ol.sublist {
     font-size: large;
 }
 
-.copperlab {
+.widebody {
     max-width: 800px;
+}
+
+body > header {
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    background: #ffffff;
+    height: auto;
+}
+
+
+.header1 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* Video */
+
+video::cue {
+    align: middle;
+    line: 90%;
+}
+
+video::-webkit-media-text-track-display {
+    font-size: 50%;
+}
+
+/* Schedule */
+
+.schedule {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.schedule td,
+th {
+    border: 1px solid #404040;
+    text-align: center;
+    padding: 8px;
+}
+
+.schedule a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.schedule em {
+    color: black;
+    font-weight: normal;
+    font-style: italic;
 }
