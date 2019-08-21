@@ -101,14 +101,14 @@ function safety(chemicals) {
         },
 
         'Benedict': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9925648'
+            'link': 'https://fscimage.fishersci.com/msds/90749.htm'
             , 'name': "Benedict's Reagent"
             , 'aka': ''
             , 'hazard': 'Hazardous in case of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of skin contact (irritant); liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.'
         },
 
         'benzophenone': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927097'
+            'link': 'https://fscimage.fishersci.com/msds/02740.htm'
             , 'name': 'Benzophenone'
             , 'aka': ''
             , 'hazard': 'hazardous in case of skin/eye contact and inhalation/ingestion; toxic to aquatic life'
@@ -178,7 +178,7 @@ function safety(chemicals) {
         },
 
         'calcium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9923251'
+            'link': 'https://fscimage.fishersci.com/msds/03900.htm'
             , 'name': 'Calcium chloride'
             , 'aka': ''
             , 'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
@@ -200,7 +200,7 @@ function safety(chemicals) {
         },
 
         'copper nitrate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927142',
+            'link': 'https://fscimage.fishersci.com/msds/02026.htm',
             'name': 'Copper nitrate',
             'aka': '',
             'hazard': 'Slightly hazardous in case of skin contact (sensitizer).  Repeated or prolonged exposure to the\n' +
@@ -214,10 +214,10 @@ function safety(chemicals) {
             , 'hazard': 'harmful if swallowed; causes skin and eye irritation'
         },
          'cobalt chloride': {
-             'link': 'http://www.sciencelab.com/msds.php?msdsId=9925768',
+             'link': 'https://fscimage.fishersci.com/msds/05345.htm',
              'name': 'cobalt (II) chloride solution with HCl',
              'aka': '',
-             'hazard': 'Potential Acute Health Effects: Very hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, . Hazardous in case of skin contact (corrosive, sensitizer, permeator), of eye contact (corrosive), of inhalation (lung sensitizer). Non-corrosive for lungs. Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath. Severe over-exposure can result in death. Inflammation of the eye is characterized by redness, watering, and itching. Skin inflammation is characterized by itching, scaling, reddening, or, occasionally, blistering. DEVELOPMENTAL TOXICITY: Classified Reproductive system/ toxin/male [POSSIBLE] [Cobalt chloride hexahydrate]. The substance may be toxic to blood, lungs, upper respiratory tract, skin, eyes, , teeth. Repeated or prolonged exposure to the substance can produce target organs damage. Repeated or\ prolonged contact with spray mist may produce chronic eye irritation and severe skin irritation. Repeated or prolonged exposure to spray mist may produce respiratory tract irritation leading to frequent attacks of bronchial infection. Repeated exposure to a highly toxic material may produce general deterioration of health by an accumulation in one or many human organs.'
+             'hazard': 'Very hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, . Hazardous in case of skin contact (corrosive, sensitizer, permeator), of eye contact (corrosive), of inhalation (lung sensitizer). Non-corrosive for lungs. Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Severe over-exposure can result in death.'
          },
         'crystal violet': {
             'link': 'https://www.fishersci.com/shop/msdsproxy?productName=23270180&productDescription=GRAM+STAIN+CRYSTL+VIOLET+GAL&catNo=23-270-180&vendorId=VN00008297&storeId=10652'
@@ -297,16 +297,16 @@ function safety(chemicals) {
         },
 
         'hydrochloric acid': {
-            'link': 'https://www.fishersci.com/store/msds?partNumber=AC450550025&productDescription=hydrochloric-acid--acros-organics&vendorId=VN00032119&keyword=true&countryCode=US&language=en'
+            'link': 'https://fscimage.fishersci.com/msds/11155.htm'
             , 'name': 'Hydrochloric acid'
             , 'aka': ''
             , 'hazard': 'causes severe skin burns, eye damage, and respiratory irritation (wear gloves); corrosive; do not handle outside of fumehood'
         },
          'hydrogen peroxide': {
-             'link': 'http://www.sciencelab.com/msds.php?msdsId=9924299',
+             'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-h/S25359.pdf',
              'name': 'hydrogen peroxide',
              'aka': '',
-             'hazard': ' very hazardous in case of skin contact (irritant) and of eye contact(irritant). Hazardous in case of skin contact (corrosive),of eye contact (corrosive) and of ingestion. Slightly hazardous in case of inhalation (lung sensitizer). Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath.Prolonged exposure may result in skin burns and ulcerations. Over-exposure by inhalation may cause respiratory irritation.  Inflammation of the eye is characterized by redness,watering, and itching. Skin inflammation is characterized by itching, scaling, reddening, or,occasionally, blistering.'
+             'hazard': ' very hazardous in case of skin contact (irritant) and of eye contact(irritant). Hazardous in case of skin contact (corrosive),of eye contact (corrosive) and of ingestion. Slightly hazardous in case of inhalation (lung sensitizer). Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Prolonged exposure may result in skin burns and ulcerations.'
          },
         'imidazole': {
             'link': 'https://www.fishersci.com/store/msds?partNumber=O3196500&productDescription=imidazole-certified-acs-fisher-chemical&vendorId=VN00033897&keyword=true&countryCode=US&language=en'
@@ -344,7 +344,7 @@ function safety(chemicals) {
         },
 
         'KSCN': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927574'
+            'link': 'https://fscimage.fishersci.com/msds/19640.htm'
             , 'name': 'Potassium thiocyanate'
             , 'aka': ''
             , 'hazard': 'hazardous in case of skin contact (irritant, permeator) of eye contact(irritant) of ingestion and of inhalation(lung irritant).'
@@ -365,7 +365,7 @@ function safety(chemicals) {
         },
 
         'magnesium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927218'
+            'link': 'https://fscimage.fishersci.com/msds/13510.htm'
             , 'name': 'Magnesium sulfate'
             , 'aka': 'epsom salt'
             , 'hazard': 'Hazardous in case of ingestion. Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of inhalation.'
@@ -407,7 +407,7 @@ function safety(chemicals) {
         },
 
         'nitricacid': {
-            'link': ' http://www.sciencelab.com/msds.php?msdsId=9926241'
+            'link': 'https://fscimage.fishersci.com/msds/16550.htm'
             , 'name': 'Nitric acid'
             , 'aka': ''
             , 'hazard': 'corrosive and a powerful oxidizing agent. It will hydrolyse skin, so it is of utmost importance to be wearing gloves, lab coat and safety glasses when handling nitric acid. Nitric acid on the skin can also stain the skin yellow. If you get nitric acid on yourself you should rinse the affected area with cold water for 15 minutes. Any clothing contaminated with nitric acid (including gloves) should be removed immediately as the acid will do damage to the skin underneath. Do not mix nitric acid with other chemicals unless instructed to do so. Nitric acid is also a skin irritant, (permeator) an eye irritant and an irritant due to ingestion and inhalation.'
@@ -463,7 +463,7 @@ function safety(chemicals) {
         },
 
         'phenolphthalein': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926477'
+            'link': 'https://fscimage.fishersci.com/msds/96382.htm'
             , 'name': 'Phenolphthalein'
             , 'aka': ''
             , 'hazard': 'hazardous in case of skin contact(irritant), of eye contact(irritant) and of ingestion. It is slightly hazardous in case of skin contact(permeator).'
@@ -534,7 +534,7 @@ function safety(chemicals) {
         },
 
         'potassium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927236'
+            'link': 'https://www.fishersci.com/store/msds?partNumber=AC424220010&productDescription=POTASSIUM+SULFATE%2C+ANHYD+1KG&vendorId=VN00032119&countryCode=US&language=en'
             , 'name': 'Potassium sulfate'
             , 'aka': ''
             , 'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation. Slightly hazardous in case of\n' +
@@ -542,7 +542,7 @@ function safety(chemicals) {
         },
 
         'kbiph': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9926672'
+            'link': 'https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-p/S25490.pdf'
             , 'name': 'Potassium biphthalate'
             , 'aka': ''
             , 'hazard': ' is slightly hazardous  in case of skin contact (irritant), eye contact (irritant), ingestion and inhalation.'
@@ -584,7 +584,7 @@ function safety(chemicals) {
         },
 
         'salicylic acid': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927249',
+            'link': 'https://fscimage.fishersci.com/msds/20315.htm',
             'name': 'salicylic acid',
             'aka': '',
             'hazard': 'Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation (lung irritant). Slightly hazardous in case of skin contact (permeator). Severe over-exposure can result in death.'
@@ -618,7 +618,7 @@ function safety(chemicals) {
         },
 
         'sodium carbonate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927263'
+            'link': 'https://fscimage.fishersci.com/msds/21080.htm'
             , 'name': 'Sodium carbonate'
             , 'aka': ''
             , 'hazard': ': Hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of inhalation\n' +
@@ -626,7 +626,7 @@ function safety(chemicals) {
         },
 
         'sodium chloride': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927593'
+            'link': 'https://fscimage.fishersci.com/msds/21105.htm'
             , 'name': 'Sodium chloride'
             , 'aka': 'table salt'
             , 'hazard': ' Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
@@ -648,7 +648,7 @@ function safety(chemicals) {
         },
 
         'sodium sulfate': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927278'
+            'link': 'https://fscimage.fishersci.com/msds/21630.htm'
             , 'name': 'Sodium sulfate'
             , 'aka': ''
             , 'hazard': 'Hazardous in case of eye contact (irritant). Slightly hazardous in case of skin contact (irritant), of ingestion, of inhalation.'
@@ -669,7 +669,7 @@ function safety(chemicals) {
         },
 
         'sucrose': {
-            'link': 'http://www.sciencelab.com/msds.php?msdsId=9927285'
+            'link': 'https://www.fishersci.com/shop/msdsproxy?productName=S650&productDescription=SUCROSE'
             , 'name': 'Sucrose'
             , 'aka': 'table sugar'
             , 'hazard': 'Slightly hazardous in case of skin contact (irritant), of eye contact (irritant), of ingestion, of\n' +
@@ -768,6 +768,7 @@ function safety(chemicals) {
 
         var link = document.createElement('a');
         link.setAttribute('href', safety_statements[chemicals[i]]['link']);
+        link.setAttribute('target', "_blank")
         link.appendChild(document.createTextNode(safety_statements[chemicals[i]]['name']));
 
         chemical.appendChild(link);
@@ -1136,7 +1137,19 @@ function bibentry(entry){
                 "ENTRYTYPE": "article",
                 "ID": "hansen_2005"
             },
-
+            "hohn_1993": {
+                            "title": "A Simple Determination of the Greenhouse Effect",
+                            "volume": "70",
+                            "doi": "10.1021/ed070p73",
+                            "pages": "73",
+                            "number": "1",
+                            "journaltitle": "Journal of Chemical Education",
+                            "shortjournal": "J. Chem. Educ.",
+                            "author": "Adelhelm, M.; Ernst-Gerhard Hohn.",
+                            "date": "1993",
+                            "ENTRYTYPE": "article",
+                            "ID": "hohn_1993"
+                        },
             "holden_2001": {
                 "title": "The Biginelli Reaction",
                 "volume": "78",
@@ -1503,7 +1516,19 @@ function bibentry(entry){
                 "ENTRYTYPE": "article",
                 "ID": "reist_1970"
             },
-
+            "renyk_1982": {
+                            "title": "Isolation, separatuib and identification of synthetic food colors",
+                            "volume": "59",
+                            "doi": "10.1021/ed059p67",
+                            "pages": "67",
+                            "number": "1",
+                            "journaltitle": "Journal of Chemical Education",
+                            "shortjournal": "J. Chem. Educ.",
+                            "author": "Dixon, E. A.; Renyk, G.",
+                            "date": "1982",
+                            "ENTRYTYPE": "article",
+                            "ID": "renyk_1982"
+                        },
             "rostovtsev_2002": {
                 "title": "A Stepwise Huisgen Cycloaddition Process: Copper(I)-Catalyzed Regioselective \u201cLigation\u201d of Azides and Terminal Alkynes",
                 "volume": "114",
@@ -1530,7 +1555,19 @@ function bibentry(entry){
                 "ENTRYTYPE": "article",
                 "ID": "rowinsky_1993"
             },
-
+            "schamper_1993": {
+                            "title": "Chemical aspects of antiperspirants and deodorants",
+                            "volume": "70",
+                            "doi": "10.1021/ed070p242",
+                            "pages": "242",
+                            "number": "3",
+                            "journaltitle": "Journal of Chemical Education",
+                            "shortjournal": "J. Chem. Educ.",
+                            "author": "Schamper, T.",
+                            "date": "1993",
+                            "ENTRYTYPE": "article",
+                            "ID": "schamper_1993"
+                        },
             "smestad_1998":{
                 "title": "Demonstrating Electron Transfer and Nanotechnology: A Natural Dye-Sensitized Nanocrystalline Energy Converter",
                 "volume": "75",
@@ -1545,7 +1582,33 @@ function bibentry(entry){
                 "ENTRYTYPE": "article",
                 "ID": "smestad_1998"
             },
-
+                        "smith_2011": {
+                                        "title": "How Much Cranberry Juice is in Cranberry-Apple Juice? A General Chemistry Spectrophotometric Experiment",
+                                        "volume": "88",
+                                        "doi": "10.1021/ed2002237",
+                                        "pages": "1410-1412",
+                                        "number": "10",
+                                        "journaltitle": "Journal of Chemical Education",
+                                        "shortjournal": "J. Chem. Educ.",
+                                        "author": "Villarreal, J. R.; Edionwe, E.; Smith, K. C.",
+                                        "date": "2011",
+                                        "ENTRYTYPE": "article",
+                                        "ID": "smith_2011"
+                                    },
+            "Steffel_1990": {
+                            "title": "Reduction of permanganate: A kinetics demonstration for general chemistry",
+                            "volume": "67",
+                            "doi": "10.1021/ed067p598.3",
+                            "pages": "598",
+                            "number": "7",
+                            "journaltitle": "Journal of Chemical Education",
+                            "shortjournal": "J. Chem. Educ.",
+                            "author": "Steffel, M. J.",
+                            "date": "1990",
+                            "ENTRYTYPE": "article",
+                            "ID": "steffel_1990"
+                        },
+            
             "stolle_2011":{
                 "title": "Ball Milling in Organic Synthesis: Solutions and Challenges",
                 "volume": "40",
@@ -1624,7 +1687,19 @@ function bibentry(entry){
                     "ENTRYTYPE": "book",
                     "ID": "thomson_1971"
                 },
-
+            "thomsen_1992": {
+                            "title": "Determination of the solubility product of copper(II) tartrate",
+                            "volume": "69",
+                            "doi": "10.1021/ed069p328",
+                            "pages": "328",
+                            "number": "4",
+                            "journaltitle": "Journal of Chemical Education",
+                            "shortjournal": "J. Chem. Educ.",
+                            "author": "Thomsen, M. W.",
+                            "date": "1992",
+                            "ENTRYTYPE": "article",
+                            "ID": "thomsen_1992"
+                        },
             "vainio_1997": {
                 "title": "Aspirin for the second hundred years: new uses for an old drug",
                 "volume": "81",
@@ -1928,7 +2003,7 @@ function makeprelab(ids) {
     var header = document.createElement('h4');
     header.appendChild(document.createTextNode('Pre-Lab Questions (Compiled from the Lab Manual)'));
     var description = document.createElement('p');
-    description.appendChild(document.createTextNode('Answer these questions on the back of the data sheet that you will hand into your TA.'));
+    description.appendChild(document.createTextNode('Answer these questions on the back of the data sheet that you will submit to your TA.'));
     var prelab_list = document.createElement('ol');
     for (i = 0; i < ids.length; i++) {
         var text = document.getElementById(ids[i]).textContent;
@@ -1971,8 +2046,7 @@ function write_molecule (molfile, name) {
     ChemDoodle.ELEMENT['Co'].vdWRadius = '1.6';
     console.log(ChemDoodle.ELEMENT['Co'].vdWRadius);
     ChemDoodle.ELEMENT['Cl'].vdWRadius = '1.6';
-
-    var molecule = ChemDoodle.readMOL(molFile, 1);
+    var molecule = ChemDoodle.readMOL(molfile, 1);
 
     transformBallAndStick.loadMolecule(molecule);
     console.log(transformBallAndStick);
@@ -2127,8 +2201,9 @@ $(function() {
         $parent = $(this).parent();
         $sibling = $parent.next();
         $grandpa = $parent.parent();
-        $correct = $grandpa.children('.A').children('.correct');
+        $correct = $grandpa.children('.a').children('.correct');
         $sibling.show();
+        console.log('test');
         $correct.addClass('hilite');
         $(this).hide();
     });
@@ -2168,3 +2243,128 @@ function concentration (mass, molar_mass, volume) {
     var conc = mass/(molar_mass* volume);
     return conc
 }
+
+function periodic () {
+    var $absorbance = 0.3 + Math.random() / 13;
+    $absorbance = parseFloat($absorbance.toFixed(2));
+    var $concentration = $absorbance / 0.003;
+    $('#absorbance').append($absorbance.toFixed(3));
+    $('#concentration').append($concentration.toFixed(0));
+}
+
+function periodic_2 () {
+    var $concentration = 100 + Math.random() * 300;
+    $concentration = parseFloat($concentration.toFixed(0));
+    var $absorbance = $concentration * 0.003;
+    $('#abs_chlo').append($absorbance.toFixed(2));
+    $('#con_chlo').append($concentration.toFixed(0));
+}
+
+function gas1 () {
+    var $hcl_mL = 3 + Math.random()
+    var $hcl_mL = parseFloat($hcl_mL.toFixed(3))
+    var $hcl_mol = 3 + Math.random()
+    var $hcl_mol = parseFloat($hcl_mol.toFixed(4))
+    var $caco3 = $hcl_mol * $hcl_mL * 100.0869 / 2
+    $('#hcl').append($hcl_mL.toFixed(3));
+    $('#molar').append($hcl_mol.toFixed(4));
+    $('#caco3answ').append($caco3.toFixed(1));
+};
+function gas2 () {
+    var $kPa = 99 + Math.random()
+    var $kPa = parseFloat($kPa.toFixed(1))
+    var $press = $kPa - 2.72
+    $('#kPa').append($kPa.toFixed(1));
+    $('#press').append($press.toFixed(1));
+};
+function gas3 () {
+    var $weight = 0.9 + Math.random() / 5
+    var $weight = parseFloat($weight.toFixed(2))
+    var $caco3w = 300 + Math.random() * 10
+    var $caco3w = parseFloat($caco3w.toFixed(1))
+    var $ww = $caco3w / ($weight * 10)
+    $('#weight').append($weight.toFixed(2));
+    $('#caco3w').append($caco3w.toFixed(1));
+    $('#ww').append($ww.toFixed(1));
+};
+function gas4 () {
+    var $mass = 0.35 + Math.random() / 10
+    $mass = parseFloat($mass.toFixed(4))
+    var $purity = 99 + Math.random()
+    $purity = parseFloat($purity.toFixed(1))
+    var $pi = 50 + Math.random()
+    $pi = parseFloat($pi.toFixed(1))
+    var $pf = 120 + Math.random() * 10
+    $pf = parseFloat($pf.toFixed(1))
+    var $ti = 20 + Math.random() / 2
+    $ti = parseFloat($ti.toFixed(2))
+    var $tf = 21.5 + Math.random() / 2
+    var $tf = parseFloat($tf.toFixed(2))
+    var $tfk = $tf + 273.15
+    var $tik = $ti + 273.15
+    var $pih2o = 20 * 2.33 / $ti
+    var $pfh2o = 21.5 * 2.56 / $tf
+    var $pip = $pi - $pih2o
+    var $pfp = $pf - $pfh2o
+    var $V = (($mass * ($purity / 100)) / 100.0869) * (8.314 / (($pfp / $tfk) - ($pip / $tik)))
+    $('#mass').append($mass.toFixed(4))
+    $('#purity').append($purity.toFixed(1))
+    $('#pi').append($pi.toFixed(1))
+    $('#pf').append($pf.toFixed(1))
+    $('#ti').append($ti.toFixed(2))
+    $('#tf').append($tf.toFixed(2))
+    $('#volume').append($V.toFixed(3))
+};
+function gas5 () {
+    var $volume = 0.135 + Math.random() / 100
+    $volume = parseFloat($volume.toFixed(3))
+    var $pi = 45 + Math.random()
+    $pi = parseFloat($pi.toFixed(1))
+    var $pf = 128 + Math.random() * 10
+    $pf = parseFloat($pf.toFixed(1))
+    var $ti = 20 + Math.random() / 2
+    $ti = parseFloat($ti.toFixed(2))
+    var $tf = 21.5 + Math.random() / 2
+    var $tfk = $tf + 273.15
+    var $tf = parseFloat($tf.toFixed(2))
+    var $tik = $ti + 273.15
+    var $pih2o = 20 * 2.33 / $ti
+    var $pfh2o = 21.5 * 2.56 / $tf
+    var $pip = $pi - $pih2o
+    var $pfp = $pf - $pfh2o
+    var $amount = ((($pfp / $tfk) - ($pip / $tik)) * ($volume / 8.314)) * 1000
+    $('#Vf').append($volume.toFixed(3))
+    $('#pi2').append($pi.toFixed(1))
+    $('#pf2').append($pf.toFixed(1))
+    $('#ti2').append($ti.toFixed(2))
+    $('#tf2').append($tf.toFixed(2))
+    $('#amount').append($amount.toFixed(2))
+};
+
+$(function (equilibrium) {
+    var $abs = 0.2 + Math.random() / 10;
+    $abs = parseFloat($abs.toFixed(3))
+    var $conc = $abs / (1.00 * 4700)
+    $('#abs').append($abs.toFixed(3));
+    $('#conc').append($conc.toExponential(2).toString().replace('e', ' x 10^'));
+});
+
+$(function (kinetics) {
+    var $abs = 0.2 + Math.random() / 10;
+    $abs = parseFloat($abs.toFixed(3))
+    var $conc = $abs / (1.00 * 4700)
+    $('#abs').append($abs.toFixed(3));
+    $('#conc').append($conc.toExponential(2));
+});
+
+function periodic_date() {
+    var return_date = new Date('February 18, 2019');
+    var due_date = new Date('February 25, 2019');
+    var lab_date = new Date('February 11, 2019')
+
+    $('.return_date').append(return_date.toDateString());
+    $('.due_date').append(due_date.toDateString());
+    $('.lab_date').append(lab_date.toDateString());
+
+
+};

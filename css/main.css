@@ -46,14 +46,15 @@ dd {
 }
 /* For printing */
 @media print {
-    
+
     html {
-        height: auto;    
+        height: auto;
+        background: #FFFFFF
     }
      body {
         color: #000;
         background: #fff;
-        font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+         font-family: 'Helvetica Neue', Arial, sans-serif;
          line-height:1.5;
          height: auto;
     }
@@ -61,7 +62,9 @@ dd {
     page-break-after:avoid;
     page-break-inside:avoid
     }
- 
+    h1 {
+        page-break-before: always !important;
+    }
     img {
     page-break-inside:avoid;
     page-break-after:avoid;
@@ -72,14 +75,14 @@ dd {
     }
     blockquote, table, pre {
     page-break-inside:avoid
-    } 
- 
+    }
+
     ul, ol, dl {
     page-break-before:avoid
     }
- 
-    .pagebreak { 
-        page-break-inside: avoid;; 
+
+    .pagebreak {
+        page-break-inside: avoid;;
     }
     .break {
         page-break-before: always;
@@ -94,8 +97,19 @@ dd {
     .notice {
         page-break-inside: avoid;
     }
-    .nobreak { 
+    .nobreak {
     page-break-inside: avoid;
+    }
+    .paget, .double img, .split img{
+        width: 3.5in;
+        margin-left: auto;
+    }
+    .qa, video, button {
+        display: none !important;
+    }
+    .split img{
+        width: 2in;
+        margin-left: auto;
     }
 
   }
@@ -178,6 +192,9 @@ table.datasheet th {
 .fixedwidth250 {
     width: 250px;
 }
+.fixedwidth200 {
+    width: 200px;
+}
 .fixedwidth400 {
     width: 400px;
 }
@@ -221,12 +238,14 @@ em {
 /* Images and Figure counting*/
 img {
     background: transparent;
-    border: 6px solid rgba(0, 0, 0, 0.12);
+    border: 6px solid transparent;
     border-radius: 4px;
     display: block;
     margin: 1.3em auto;
     max-width: 95%;
 }
+
+
 .figure {
 	counter-increment: figures;
 }
@@ -255,7 +274,7 @@ img {
 .labtable caption {
     counter-increment: tables;
 }
-
+/*
 .labtable caption:before {
     content: 'Table ' counter(tables) ' - ';
     font-weight: bold;
@@ -269,6 +288,7 @@ img {
     content: 'Table ' counter(tables) ' - ';
     font-weight: bold;
 }
+*/
 /* end images and figure count*/
 
 /* safety boxes */
@@ -395,29 +415,26 @@ img.inlineimage {
 .centered {
     text-align: center;
 }
+.crossed {
+    text-decoration: line-through;
+}
 
 /* For extra questions */
-.QA{
-    border: 1px solid grey;
-    padding: 10px;
 
-}
-.Q {
-    font-weight: bold;
-    font-size: large;
-}
 
-.A {
-    
-    
-}
-.A span {
+
+.a span {
     font-weight:bold;
 }
 
 
 
 .hilite span {
+    color: dodgerblue;
+}
+
+.hilite {
+    font-weight: bold;
     color: dodgerblue;
 }
 
@@ -483,7 +500,8 @@ ol.sublist {
 }
 @media screen and (min-width: 450px) {
     .paget {
-        max-width: 350px;
+        max-width: 50%;
+        margin-left: auto;
     }
     .smallfig-right {
         float: right;
@@ -493,16 +511,7 @@ ol.sublist {
 }
 /* Graphs */
 
-.canvasContainer {
-    float: left;
-    position: relative;
 
-}
-
-.canvasquestion {
-    height: 200px;
-    width: 200px;
-}
 
 .drop {
     float: left;
@@ -554,10 +563,10 @@ ol.sublist {
 
 /* Sherlock Holmes Mystery */
 .mysterytable {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline;
+
     border-collapse: collapse;
-    border: 1px solid black;
+
 }
 
 .mysterytable td {
@@ -616,6 +625,10 @@ video::-webkit-media-text-track-display {
     font-size: 50%;
 }
 
+video {
+    display: block;
+    margin: 0 auto;
+}
 /* Schedule */
 
 .schedule {
@@ -634,10 +647,50 @@ th {
 .schedule a {
     color: inherit;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .schedule em {
     color: black;
     font-weight: normal;
     font-style: italic;
+}
+
+/* Specific for titration lab*/
+
+@media screen and (max-width: 650px) {
+    .titration {
+        min-width: 10px;
+    }
+    .datainfo {
+        min-width: 200px;
+    }
+}
+
+/* Kinetic lab*/
+
+
+.canvasquestion {
+    height: 200px;
+    width: 200px;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.barcode {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.qspace {
+    height: 300px;
+    margin: auto;
+    border: 1px solid black;
 }
