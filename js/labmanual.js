@@ -1,4 +1,4 @@
-<!--PRINTABLE AREA-->
+// <!--PRINTABLE AREA-->
 
 function printDiv(printableArea) {
     var printContents = document.getElementById(printableArea).innerHTML;
@@ -12,7 +12,7 @@ function printDiv(printableArea) {
 }
 
 
-<!-- MSDS -->
+// <!-- MSDS -->
 
 function safety(chemicals) {
     var safety_statements = {
@@ -796,7 +796,7 @@ function safety(chemicals) {
     </div>
 */
 
-<!-- Bibilography -->
+// <!-- Bibilography -->
 
 function bibentry(entry){
 
